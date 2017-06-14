@@ -50,6 +50,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Swift ECS Workshop](https://github.com/awslabs/swift-ecs-workshop)
   - [NGINX Reverse Proxy sidecar container on AWS ECS](https://github.com/awslabs/ecs-nginx-reverse-proxy)
   - [Deploying a Deep Learning Framework on ECS](https://github.com/awslabs/ecs-deep-learning-workshop)
+  - [Powering your Amazon ECS Cluster with Amazon EC2 Spot Instances](https://github.com/awslabs/ec2-spot-labs/tree/master/ecs-ec2-spot-fleet)
 
 * __Build Pipeline__
   - [Continueous Deployment Reference Architecture](https://github.com/awslabs/ecs-refarch-continuous-deployment)
