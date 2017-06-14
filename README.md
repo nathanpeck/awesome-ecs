@@ -1,6 +1,9 @@
+[<img src="/ecs-icon.png" align="right">](https://nodejs.org)
 # Awesome ECS
 
-A curated list of guides, development tools and resources for [AWS EC2 Container Service](https://aws.amazon.com/ecs/) (ECS).
+A curated list of guides, development tools, and resources for [AWS EC2 Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
+
+_Want to add something? Open a PR!_ 🙂
 
 * __Getting Started__
   - [The Hitchhikers Guide to AWS ECS and Docker](http://start.jcolemorrison.com/the-hitchhikers-guide-to-aws-ecs-and-docker/) by [J. Cole Morrison](https://twitter.com/JColeMorrison) - Introduction to AWS ECS concepts
