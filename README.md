@@ -54,7 +54,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Powering your Amazon ECS Cluster with Amazon EC2 Spot Instances](https://github.com/awslabs/ec2-spot-labs/tree/master/ecs-ec2-spot-fleet)
 
 * __Build Pipeline__
-  - [Continueous Deployment Reference Architecture](https://github.com/awslabs/ecs-refarch-continuous-deployment)
+  - [Continuous Deployment Reference Architecture](https://github.com/awslabs/ecs-refarch-continuous-deployment)
   - [Continuous Deployment of a Dockerized Node.js Application to AWS ECS](https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-dockerized-node-js-application-to-aws-ecs)
   - [Easy Blue-Green Deployments on Amazon EC2 Container Service](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
   - [How to configure a Gitlab -> ECS continuous deployment pipeline](http://jeanphix.me/2017/06/14/how-to-configure-a-gitlab-ecs-continuous-deployment-pipeline/)
