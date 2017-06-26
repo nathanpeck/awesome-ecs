@@ -24,6 +24,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Pnzr](https://github.com/jobtalk/pnzr) - Go based tool for building and pushing to ECS, also has integraton with AWS KMS for secrets management.
   - [Deplojo](https://github.com/LabD/ecs-deplojo) - Python based deployment tool using ECS
   - [Convox](https://convox.com/) - Easily build, deploy and scale applications on ECS
+  - [ecsctl](https://github.com/cxmcc/ecsctl) - Open source tool similar to Kubernetes `kubectl` for ECS.
 
 * __Implementation Guides__
   * __Autoscaling__
