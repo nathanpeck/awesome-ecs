@@ -37,7 +37,7 @@ _Want to add something? Open a PR!_ 🙂
     - [Using DNS](https://github.com/awslabs/ecs-refarch-service-discovery/)
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
-    - [Using linkerd](https://kevinholditch.co.uk/2017/06/28/running-linkerd-in-a-docker-container-on-aws-ecs/)
+    - [Using linkerd](https://medium.com/attest-engineering/linkerd-a-service-mesh-for-aws-ecs-937f201f847a)
   * __Secrets Management__
     - [Using Parameter Store and IAM Roles for Tasks](https://aws.amazon.com/blogs/compute/managing-secrets-for-amazon-ecs-applications-using-parameter-store-and-iam-roles-for-tasks/)
   * __Docker for .NET Developers__
