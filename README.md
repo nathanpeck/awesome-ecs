@@ -40,6 +40,7 @@ _Want to add something? Open a PR!_ 🙂
     - [Using linkerd](https://medium.com/attest-engineering/linkerd-a-service-mesh-for-aws-ecs-937f201f847a)
   * __Secrets Management__
     - [Using Parameter Store and IAM Roles for Tasks](https://aws.amazon.com/blogs/compute/managing-secrets-for-amazon-ecs-applications-using-parameter-store-and-iam-roles-for-tasks/)
+    - [Using ECS Task roles for managing AWS credentials](https://medium.com/@RemindEng/keeping-aws-secrets-secret-with-ecs-ec4a51517b4d)
   * __Docker for .NET Developers__
     - [Part One: Intro](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
     - [Part Two: Our First dockerfile](https://www.stevejgordon.co.uk/docker-for-dotnet-developers-part-2)
