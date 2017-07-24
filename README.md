@@ -26,6 +26,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Deplojo](https://github.com/LabD/ecs-deplojo) - Python based deployment tool using ECS
   - [Convox](https://convox.com/) - Easily build, deploy and scale applications on ECS
   - [ecsctl](https://github.com/cxmcc/ecsctl) - Open source tool similar to Kubernetes `kubectl` for ECS.
+  - [ecs-deploy](https://github.com/silinternational/ecs-deploy) - Simple but powerful tool for initiating automatic blue green deploys on ECS
 
 * __Implementation Guides__
   * __Autoscaling__
