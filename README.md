@@ -29,7 +29,7 @@ _Want to add something? Open a PR!_ 🙂
   - [ecs-deploy](https://github.com/silinternational/ecs-deploy) - Simple but powerful tool for initiating automatic blue green deploys on ECS
 
 * __Implementation Guides__
-  * __Autoscaling__
+  * <a name="autoscaling" /> __Autoscaling__ 
     - [Autoscaling services in ECS](https://www.codementor.io/jholub/amazon-ecs-auto-scale-docker-containers-6keydo24n) - How to autoscale the number of service tasks
     - [Autoscaling the cluster in ECS](http://garbe.io/blog/2016/10/17/docker-on-ecs-scale-your-ecs-cluster-automatically/) - How to autoscale the number of EC2 instances in a cluster
     - [Advanced ECS cluster autoscaling](http://garbe.io/blog/2017/04/12/a-better-solution-to-ecs-autoscaling/) - A more advanced technique for autoscaling an ECS cluster, with more effective scale in as well as out
