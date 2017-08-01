@@ -35,7 +35,7 @@ _Want to add something? Open a PR!_ 🙂
     - [Advanced ECS cluster autoscaling](http://garbe.io/blog/2017/04/12/a-better-solution-to-ecs-autoscaling/) - A more advanced technique for autoscaling an ECS cluster, with more effective scale in as well as out
   * __Networking__
     - [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
-  * __Service Discovery__
+  * <a name="service-discovery" /> __Service Discovery__
     - [Using DNS](https://github.com/awslabs/ecs-refarch-service-discovery/)
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
