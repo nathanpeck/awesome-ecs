@@ -1,5 +1,5 @@
 [<img src="./ecs-icon.png" align="right" width="20%">](https://aws.amazon.com/ecs/)
-# Awesome ECS
+# AWSome ECS
 
 A curated list of guides, development tools, and resources for [Amazon EC2 Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
 
