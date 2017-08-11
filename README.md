@@ -1,5 +1,5 @@
 [<img src="./ecs-icon.png" align="right" width="20%">](https://aws.amazon.com/ecs/)
-# Awesome ECS
+# AWSome ECS
 
 A curated list of guides, development tools, and resources for [Amazon EC2 Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
 
@@ -15,8 +15,10 @@ _Want to add something? Open a PR!_ 🙂
   - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
   - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
   - [mu](https://github.com/stelligent/mu) - This devops tool helps you setup ECS as a platform to deploy microservices on
+  - [Deployfish](https://github.com/caltechads/deployfish) by [Caltech ADS](http://ads.caltech.edu/) - Manage your whole application lifecycle in Amazon ECS
 
 * __Build and Deploy Tools__
+  - [coldbrew](https://github.com/coldbrewcloud/coldbrew-cli) - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically
   - [ECS CLI](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
   - [Empire](https://github.com/remind101/empire/blob/master/README.md) - Control layer on top of ECS that provides a Heroku like workflow
   - [Broadside](https://github.com/lumoslabs/broadside/) - Ruby based command line tool for deploying to ECS
@@ -35,7 +37,7 @@ _Want to add something? Open a PR!_ 🙂
     - [Advanced ECS cluster autoscaling](http://garbe.io/blog/2017/04/12/a-better-solution-to-ecs-autoscaling/) - A more advanced technique for autoscaling an ECS cluster, with more effective scale in as well as out
   * __Networking__
     - [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
-  * __Service Discovery__
+  * <a name="service-discovery" /> __Service Discovery__
     - [Using DNS](https://github.com/awslabs/ecs-refarch-service-discovery/)
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
@@ -56,6 +58,7 @@ _Want to add something? Open a PR!_ 🙂
 * __Other Tools__
   - [Blox](https://blox.github.io/) - Framework for advanced cluster management and scheduling
   - [Watchbot](https://github.com/mapbox/ecs-watchbot) - This tool by [Mapbox](https://www.mapbox.com/) helps you run data processing across an ECS cluster in response to external events
+  - [ecs-export](https://github.com/slok/ecs-exporter) - A tool for exporting ECS cluster metrics to Prometheus for advanced querying
 
 * __Reference Architectures__
   - [Microservice cloudformation stack](https://github.com/awslabs/ecs-refarch-cloudformation)
