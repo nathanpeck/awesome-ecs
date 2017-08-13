@@ -73,6 +73,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Continuous Deployment Reference Architecture](https://github.com/awslabs/ecs-refarch-continuous-deployment)
   - [Continuous Deployment of a Dockerized Node.js Application to AWS ECS](https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-dockerized-node-js-application-to-aws-ecs)
   - [Easy Blue-Green Deployments on Amazon EC2 Container Service](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
+  - [Blue/Green Deployments with Amazon EC2 Container Service](https://aws.amazon.com/blogs/compute/bluegreen-deployments-with-amazon-ecs/)
   - [How to configure a Gitlab -> ECS continuous deployment pipeline](http://jeanphix.me/2017/06/14/how-to-configure-a-gitlab-ecs-continuous-deployment-pipeline/)
   - [Isolated Regression Testing](https://aws.amazon.com/blogs/compute/amazon-ecs-at-the-climate-corporation-using-ecr-and-multiple-accounts-for-isolated-regression-testing/)
   - [Continuously Deploy to AWS ECS using Shippable](http://blog.shippable.com/continuous-delivery-from-github-to-amazon-ecs)
