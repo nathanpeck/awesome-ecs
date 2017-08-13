@@ -69,17 +69,19 @@ _Want to add something? Open a PR!_ 🙂
   - [Deploying a Deep Learning Framework on ECS](https://github.com/awslabs/ecs-deep-learning-workshop)
   - [Powering your Amazon ECS Cluster with Amazon EC2 Spot Instances](https://github.com/awslabs/ec2-spot-labs/tree/master/ecs-ec2-spot-fleet)
 
-* __Build Pipeline__
-  - [Continuous Deployment Reference Architecture](https://github.com/awslabs/ecs-refarch-continuous-deployment)
-  - [Continuous Deployment of a Dockerized Node.js Application to AWS ECS](https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-dockerized-node-js-application-to-aws-ecs)
-  - [Easy Blue-Green Deployments on Amazon EC2 Container Service](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
-  - [Blue/Green Deployments with Amazon EC2 Container Service](https://aws.amazon.com/blogs/compute/bluegreen-deployments-with-amazon-ecs/)
-  - [How to configure a Gitlab -> ECS continuous deployment pipeline](http://jeanphix.me/2017/06/14/how-to-configure-a-gitlab-ecs-continuous-deployment-pipeline/)
-  - [Isolated Regression Testing](https://aws.amazon.com/blogs/compute/amazon-ecs-at-the-climate-corporation-using-ecr-and-multiple-accounts-for-isolated-regression-testing/)
-  - [Continuously Deploy to AWS ECS using Shippable](http://blog.shippable.com/continuous-delivery-from-github-to-amazon-ecs)
-  - [Build and Deploy Go webapp on AWS ECS via CircleCI](https://github.com/circleci/go-ecs-ecr)
-  - [Containerized Atlassian Bamboo Builds on ECS](https://bitbucket.org/atlassian/per-build-container)
-  - [Automate Zero Downtime Deployment with Amazon ECS and Lambda](https://medium.com/@YadavPrakshi/automate-zero-downtime-deployment-with-amazon-ecs-and-lambda-c4e49953273d)
+* __Build and Deploy Pipeline__
+  * __CI/CD using:__
+    - [AWS CodePipeline](https://github.com/awslabs/ecs-refarch-continuous-deployment)
+    - [Atlassian Bamboo](https://bitbucket.org/atlassian/per-build-container)
+    - [Lambda](https://medium.com/@YadavPrakshi/automate-zero-downtime-deployment-with-amazon-ecs-and-lambda-c4e49953273d)
+    - [CircleCI](https://github.com/circleci/go-ecs-ecr)
+    - [Shippable](http://blog.shippable.com/continuous-delivery-from-github-to-amazon-ecs)
+    - [Gitlab](http://jeanphix.me/2017/06/14/how-to-configure-a-gitlab-ecs-continuous-deployment-pipeline/)
+    - [SemaphoreCI](https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-dockerized-node-js-application-to-aws-ecs)
+  * __CI/CD mechanics:__
+    - [Rolling blue/green deploy in place](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
+    - [Blue/Green deploy with canary testing](https://aws.amazon.com/blogs/compute/bluegreen-deployments-with-amazon-ecs/)
+    - [Isolated Regression Testing](https://aws.amazon.com/blogs/compute/amazon-ecs-at-the-climate-corporation-using-ecr-and-multiple-accounts-for-isolated-regression-testing/)
 
 * __Presentations__
   - [Running your Dockerized application(s) on AWS EC2 Container Service](https://speakerdeck.com/mpas/running-your-dockerized-application-s-on-aws-ec2-container-service) by [Marco Pas](https://twitter.com/marcopas)
