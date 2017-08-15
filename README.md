@@ -80,7 +80,7 @@ _Want to add something? Open a PR!_ 🙂
     - [SemaphoreCI](https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-dockerized-node-js-application-to-aws-ecs)
   * __CI/CD mechanics:__
     - [Rolling blue/green deploy in place](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
-    - [Blue/Green deploy with canary testing](https://aws.amazon.com/blogs/compute/bluegreen-deployments-with-amazon-ecs/)
+    - [Canary Deploy](https://github.com/awslabs/ecs-canary-blue-green-deployment)
     - [Isolated Regression Testing](https://aws.amazon.com/blogs/compute/amazon-ecs-at-the-climate-corporation-using-ecr-and-multiple-accounts-for-isolated-regression-testing/)
 
 * __Presentations__
