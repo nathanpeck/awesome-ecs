@@ -59,6 +59,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Blox](https://blox.github.io/) - Framework for advanced cluster management and scheduling
   - [Watchbot](https://github.com/mapbox/ecs-watchbot) - This tool by [Mapbox](https://www.mapbox.com/) helps you run data processing across an ECS cluster in response to external events
   - [ecs-export](https://github.com/slok/ecs-exporter) - A tool for exporting ECS cluster metrics to Prometheus for advanced querying
+  - [docker-elk-ecs](https://github.com/markriggins/docker-elk-ecs) - Connecting Amazon ECS container logs to an ELK (Elasticsearch, Logstash, Kibana) stack
 
 * __Reference Architectures__
   - [Microservice cloudformation stack](https://github.com/awslabs/ecs-refarch-cloudformation)
