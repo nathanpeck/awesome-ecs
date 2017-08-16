@@ -16,6 +16,7 @@ _Want to add something? Open a PR!_ 🙂
   - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
   - [mu](https://github.com/stelligent/mu) - This devops tool helps you setup ECS as a platform to deploy microservices on
   - [Deployfish](https://github.com/caltechads/deployfish) by [Caltech ADS](http://ads.caltech.edu/) - Manage your whole application lifecycle in Amazon ECS
+  - [ecsq](https://github.com/mightyguava/ecsq) - A developer friendly tool for querying the state of an ECS cluster
 
 * __Build and Deploy Tools__
   - [coldbrew](https://github.com/coldbrewcloud/coldbrew-cli) - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically
@@ -63,6 +64,7 @@ _Want to add something? Open a PR!_ 🙂
 
 * __Reference Architectures__
   - [Microservice cloudformation stack](https://github.com/awslabs/ecs-refarch-cloudformation)
+  - [Sock shop microservices demo on Amazon ECS](https://microservices-demo.github.io/microservices-demo/deployment/ecs.html)
   - [Node.js Microservices](https://github.com/awslabs/amazon-ecs-nodejs-microservices)
   - [Java Microservices on AWS ECS](https://github.com/awslabs/amazon-ecs-java-microservices)
   - [Swift ECS Workshop](https://github.com/awslabs/swift-ecs-workshop)
