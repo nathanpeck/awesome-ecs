@@ -5,7 +5,7 @@ A curated list of guides, development tools, and resources for [Amazon EC2 Conta
 
 _Want to add something? Open a PR!_ 🙂
 
-__Table of Contents__
+### Table of Contents
 
 - <a href="#getting-started">Getting Started</a>
 - <a href="#automated-infrastructure">Automated Infrastructure</a>
