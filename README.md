@@ -13,7 +13,7 @@ __Table of Contents__
 - <a href="#implementation-guides">Implementation Guides</a>
 - <a href="#open-source-tools">Open Source Tools</a>
 - <a href="#reference-architectures">Reference Architectures</a>
-- <a href="#continuous-integration">Continuous Integration / Continuous Deployment</a>
+- <a href="#continuous-integration--continuous-deployment">Continuous Integration / Continuous Deployment</a>
 - <a href="#presentations">Presentations</a>
 - <a href="#tech-blogs">Tech Blogs</a>
 
