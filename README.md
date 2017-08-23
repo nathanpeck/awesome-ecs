@@ -5,12 +5,24 @@ A curated list of guides, development tools, and resources for [Amazon EC2 Conta
 
 _Want to add something? Open a PR!_ 🙂
 
-* __Getting Started__
+__Table of Contents__
+
+- <a href="#getting-started">Getting Started</a>
+- <a href="#automated-infrastructure">Automated Infrastructure</a>
+- <a href="#build-and-deploy-tools">Build and Deploy Tools</a>
+- <a href="#implementation-guides">Implementation Guides</a>
+- <a href="#open-source-tools">Open Source Tools</a>
+- <a href="#reference-architectures">Reference Architectures</a>
+- <a href="#continuous-integration">Continuous Integration / Continuous Deployment</a>
+- <a href="#presentations">Presentations</a>
+- <a href="#tech-blogs">Tech Blogs</a>
+
+### Getting Started
   - [The Hitchhikers Guide to AWS ECS and Docker](http://start.jcolemorrison.com/the-hitchhikers-guide-to-aws-ecs-and-docker/) by [J. Cole Morrison](https://twitter.com/JColeMorrison) - Introduction to AWS ECS concepts
   - [Working with AWS ECS](https://blog.rackspace.com/working-aws-ecs) by [Sriram Rajan](https://twitter.com/sriramrajan) of Rackspace
   - [Up and running using only the command line](https://mdln.net/articles/ecs-walkthrough.html) - Great guide by [Madeleine Thompson](https://github.com/madeleineth), perfect for the CLI lovers among us
 
-* __Automation and Infrastructure__
+### Automated Infrastructure
   - [CloudFormation ECS](https://github.com/awslabs/ecs-refarch-cloudformation) - Reference architecture for deploying microservices to ECS in tiered VPC with NAT gateways and two availability zones.
   - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
   - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
@@ -18,7 +30,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Deployfish](https://github.com/caltechads/deployfish) by [Caltech ADS](http://ads.caltech.edu/) - Manage your whole application lifecycle in Amazon ECS
   - [ecsq](https://github.com/mightyguava/ecsq) - A developer friendly tool for querying the state of an ECS cluster
 
-* __Build and Deploy Tools__
+### Build and Deploy Tools
   - [coldbrew](https://github.com/coldbrewcloud/coldbrew-cli) - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically
   - [ECS CLI](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
   - [Empire](https://github.com/remind101/empire/blob/master/README.md) - Control layer on top of ECS that provides a Heroku like workflow
@@ -31,7 +43,7 @@ _Want to add something? Open a PR!_ 🙂
   - [ecsctl](https://github.com/cxmcc/ecsctl) - Open source tool similar to Kubernetes `kubectl` for ECS.
   - [ecs-deploy](https://github.com/silinternational/ecs-deploy) - Simple but powerful tool for initiating automatic blue green deploys on ECS
 
-* __Implementation Guides__
+### Implementation Guides
   * <a name="autoscaling" /> __Autoscaling__ 
     - [Autoscaling services in ECS](https://www.codementor.io/jholub/amazon-ecs-auto-scale-docker-containers-6keydo24n) - How to autoscale the number of service tasks
     - [Autoscaling the cluster in ECS](http://garbe.io/blog/2016/10/17/docker-on-ecs-scale-your-ecs-cluster-automatically/) - How to autoscale the number of EC2 instances in a cluster
@@ -56,13 +68,13 @@ _Want to add something? Open a PR!_ 🙂
     - [Part One: Intro](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
     - [Part Two: Our First dockerfile](https://www.stevejgordon.co.uk/docker-for-dotnet-developers-part-2)
 
-* __Other Tools__
+### Open Source Tools
   - [Blox](https://blox.github.io/) - Framework for advanced cluster management and scheduling
   - [Watchbot](https://github.com/mapbox/ecs-watchbot) - This tool by [Mapbox](https://www.mapbox.com/) helps you run data processing across an ECS cluster in response to external events
   - [ecs-export](https://github.com/slok/ecs-exporter) - A tool for exporting ECS cluster metrics to Prometheus for advanced querying
   - [docker-elk-ecs](https://github.com/markriggins/docker-elk-ecs) - Connecting Amazon ECS container logs to an ELK (Elasticsearch, Logstash, Kibana) stack
 
-* __Reference Architectures__
+### Reference Architectures
   - [Microservice cloudformation stack](https://github.com/awslabs/ecs-refarch-cloudformation)
   - [Sock shop microservices demo on Amazon ECS](https://microservices-demo.github.io/microservices-demo/deployment/ecs.html)
   - [Node.js Microservices](https://github.com/awslabs/amazon-ecs-nodejs-microservices)
@@ -72,7 +84,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Deploying a Deep Learning Framework on ECS](https://github.com/awslabs/ecs-deep-learning-workshop)
   - [Powering your Amazon ECS Cluster with Amazon EC2 Spot Instances](https://github.com/awslabs/ec2-spot-labs/tree/master/ecs-ec2-spot-fleet)
 
-* __Build and Deploy Pipeline__
+### Continuous Integration / Continuous Deployment
   * __CI/CD using:__
     - [AWS CodePipeline](https://github.com/awslabs/ecs-refarch-continuous-deployment)
     - [Atlassian Bamboo](https://bitbucket.org/atlassian/per-build-container)
@@ -86,7 +98,7 @@ _Want to add something? Open a PR!_ 🙂
     - [Canary Deploy](https://github.com/awslabs/ecs-canary-blue-green-deployment)
     - [Isolated Regression Testing](https://aws.amazon.com/blogs/compute/amazon-ecs-at-the-climate-corporation-using-ecr-and-multiple-accounts-for-isolated-regression-testing/)
 
-* __Presentations__
+### Presentations
   - [Running your Dockerized application(s) on AWS EC2 Container Service](https://speakerdeck.com/mpas/running-your-dockerized-application-s-on-aws-ec2-container-service) by [Marco Pas](https://twitter.com/marcopas)
   - [Microservices on AWS with Weaveworks](https://www.youtube.com/watch?v=nSvpjZkmYIM)
   - [Running a Virtual World via ECS](https://www.youtube.com/watch?v=wGg_4aFOHsY) - Linden Labs on their usage of ECS
@@ -95,7 +107,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Building Next-Generation Applications with Amazon ECS](https://www.youtube.com/watch?v=xIc3WT6kAVw) - How Meteor Built Galaxy on Amazon ECS
   - [Amazon ECS at Coursera: A General Purpose Microservice](https://www.slideshare.net/AmazonWebServices/cmp406-amazon-ecs-at-coursera-a-generalpurpose-microservice)
 
-* __Company Tech Blog Stories__
+### Tech Blogs
 
    - [Airtime](https://airtime.com) - [Microservice Continuous Integration Made Easy with AWS ECS](https://techblog.airtime.com/microservice-continuous-integration-made-easy-with-aws-ecs-10d470e31af0)
    - [Segment](https://segment.com) - [Rebuilding Our Infrastructure with Docker, ECS, and Terraform](https://segment.com/blog/rebuilding-our-infrastructure/)
