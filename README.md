@@ -35,7 +35,7 @@ _Want to add something? Open a PR!_ 🙂
   - [ECS CLI](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
   - [Empire](https://github.com/remind101/empire/blob/master/README.md) - Control layer on top of ECS that provides a Heroku like workflow
   - [Broadside](https://github.com/lumoslabs/broadside/) - Ruby based command line tool for deploying to ECS
-  - [UFO](https://github.com/tongueroo/ufo/blob/master/README.md) - Ruby based tool for building containers and shipping them to ECS
+  - [UFO](http://ufoships.com/) - Ruby based tool for building containers and shipping them to ECS
   - [Simple bash deployment script](https://spin.atomicobject.com/2017/06/06/ecs-deployment-script/) by [Justin Kulesza](https://twitter.com/JustinKulesza)
   - [Pnzr](https://github.com/jobtalk/pnzr) - Go based tool for building and pushing to ECS, also has integraton with AWS KMS for secrets management.
   - [Deplojo](https://github.com/LabD/ecs-deplojo) - Python based deployment tool using ECS
@@ -44,7 +44,7 @@ _Want to add something? Open a PR!_ 🙂
   - [ecs-deploy](https://github.com/silinternational/ecs-deploy) - Simple but powerful tool for initiating automatic blue green deploys on ECS
 
 ### Implementation Guides
-  * <a name="autoscaling" /> __Autoscaling__ 
+  * <a name="autoscaling" /> __Autoscaling__
     - [Autoscaling services in ECS](https://www.codementor.io/jholub/amazon-ecs-auto-scale-docker-containers-6keydo24n) - How to autoscale the number of service tasks
     - [Autoscaling the cluster in ECS](http://garbe.io/blog/2016/10/17/docker-on-ecs-scale-your-ecs-cluster-automatically/) - How to autoscale the number of EC2 instances in a cluster
     - [Advanced ECS cluster autoscaling](http://garbe.io/blog/2017/04/12/a-better-solution-to-ecs-autoscaling/) - A more advanced technique for autoscaling an ECS cluster, with more effective scale in as well as out
