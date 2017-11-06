@@ -42,7 +42,7 @@ _Want to add something? Open a PR!_ 🙂
   - [convox](https://convox.com/) - Easily build, deploy and scale applications on ECS
   - [ecsctl](https://github.com/cxmcc/ecsctl) - Open source tool similar to Kubernetes `kubectl` for ECS.
   - [ecs-deploy](https://github.com/silinternational/ecs-deploy) - Simple but powerful tool for initiating automatic blue green deploys on ECS
-  - [ecspresson](https://github.com/kayac/ecspresso) - Minimalistic: JSON file goes in, service launches
+  - [ecspresso](https://github.com/kayac/ecspresso) - Minimalistic: JSON file goes in, service launches
 
 ### Implementation Guides
   * <a name="autoscaling" /> __Autoscaling__
