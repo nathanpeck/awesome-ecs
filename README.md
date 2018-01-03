@@ -1,4 +1,4 @@
-[<img src="https://cdn.rawgit.com/nathanpeck/awesome-ecs/8fc6e381/ecs.svg" align="right" width="30%">](https://aws.amazon.com/ecs/)
+[<img src="ecs-logo.png" align="right" width="30%">](https://aws.amazon.com/ecs/)
 # AWSome ECS
 
 A curated list of guides, development tools, and resources for [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
