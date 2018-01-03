@@ -93,11 +93,12 @@ Examples of how to do advanced customizations on your ECS cluster:
     - [Part One: Intro](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
     - [Part Two: Our First dockerfile](https://www.stevejgordon.co.uk/docker-for-dotnet-developers-part-2)
 
-### Open Source Tools
+### Other Open Source Tools
   - [Blox](https://blox.github.io/) - Framework for advanced cluster management and scheduling
   - [Watchbot](https://github.com/mapbox/ecs-watchbot) - This tool by [Mapbox](https://www.mapbox.com/) helps you run data processing across an ECS cluster in response to external events
   - [ecs-export](https://github.com/slok/ecs-exporter) - A tool for exporting ECS cluster metrics to Prometheus for advanced querying
   - [docker-elk-ecs](https://github.com/markriggins/docker-elk-ecs) - Connecting Amazon ECS container logs to an ELK (Elasticsearch, Logstash, Kibana) stack
+  - [Sample task definitions](https://github.com/aws-samples/aws-containers-task-definitions) - Sample task definitions for running applications like Nginx, Tomcat, Gunicorn, Wildfly, Kibana, and Jetty as containers under Amazon ECS
 
 ### Reference Architectures
   - [Microservice cloudformation stack](https://github.com/awslabs/ecs-refarch-cloudformation)
