@@ -1,4 +1,4 @@
-[<img src="ecs-logo.png" width="30%">](https://aws.amazon.com/ecs/)
+# [<img src="ecs-logo.png" width="30%">](https://aws.amazon.com/ecs/) [<img src="fargate-logo.png" width="30%">](https://aws.amazon.com/fargate/)
 
 A curated list of guides, development tools, and resources for [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
 
@@ -6,7 +6,7 @@ _Want to add something? Open a PR!_ 🙂
 
 ### Pick your container hosting strategy:
 
-- <a href="#aws-fargate">AWS Fargate</a> - Fargate is a technology for Amazon ECS that allows you to run containers without having to manage servers or clusters.
+- <a href="#aws-fargate">AWS Fargate</a> - [AWS Fargate](https://aws.amazon.com/fargate/) is a technology for Amazon ECS that allows you to run containers without having to manage servers or clusters.
 - <a href="#self-hosted-in-ec2">Self hosted in EC2</a> - Running your own cluster of EC2 instances to host your containers gives you the most control over price (ability to run on spot instances or reserved instances) as well as configuration.
 
 <br />
