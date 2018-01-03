@@ -9,14 +9,14 @@ _Want to add something? Open a PR!_ 🙂
 - <a href="#aws-fargate">AWS Fargate</a> - Fargate is a technology for Amazon ECS that allows you to run containers without having to manage servers or clusters.
 - <a href="#self-hosted-in-ec2">Self hosted in EC2</a> - Running your own cluster of EC2 instances to host your containers gives you the most control over price (ability to run on spot instances or reserved instances) as well as configuration.
 
-<hr />
+<br />
 
 ## AWS Fargate
 
 - [fargate](http://somanymachines.com/fargate/) - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.
 - [Cloudformation Templates](https://github.com/nathanpeck/aws-cloudformation-fargate) - Sample CloudFormation templates to help you spin up a Fargate cluster, and service in that cluster automatically
 
-<hr />
+<br />
 
 ## Self hosted in EC2
 
