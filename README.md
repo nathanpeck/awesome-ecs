@@ -7,7 +7,7 @@ _Want to add something? Open a PR!_ 🙂
 ### Pick your container hosting strategy:
 
 - <a href="#aws-fargate">AWS Fargate</a> - Fargate is a technology for Amazon ECS that allows you to run containers without having to manage servers or clusters.
-- <a href="#self-hosted-in-ec2">Self hosted in EC2</a> - Self hosting your containers on your own EC2 instances gives you the most control over price (ability to run on spot instances or reserved instances) as well as configuration.
+- <a href="#self-hosted-in-ec2">Self hosted in EC2</a> - Running your own cluster of EC2 instances to host your containers gives you the most control over price (ability to run on spot instances or reserved instances) as well as configuration.
 
 <hr />
 
