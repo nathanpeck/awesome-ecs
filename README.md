@@ -1,11 +1,24 @@
-[<img src="ecs-logo.png" align="right" width="30%">](https://aws.amazon.com/ecs/)
-# AWSome ECS
+[<img src="ecs-logo.png" width="30%">](https://aws.amazon.com/ecs/)
 
 A curated list of guides, development tools, and resources for [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
 
 _Want to add something? Open a PR!_ 🙂
 
-### Table of Contents
+### Pick your container hosting strategy:
+
+- <a href="#aws-fargate">AWS Fargate</a> - Fargate is a technology for Amazon ECS that allows you to run containers without having to manage servers or clusters.
+- <a href="#self-hosted-in-ec2">Self hosted in EC2</a> - Self hosting your containers on your own EC2 instances gives you the most control over price (ability to run on spot instances or reserved instances) as well as configuration.
+
+<hr />
+
+### AWS Fargate
+
+- [fargate](http://somanymachines.com/fargate/) - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.
+- [Cloudformation Templates](https://github.com/nathanpeck/aws-cloudformation-fargate) - Sample CloudFormation templates to help you spin up a Fargate cluster, and service in that cluster automatically
+
+<hr />
+
+### Self hosted in EC2
 
 - <a href="#getting-started">Getting Started</a>
 - <a href="#automated-infrastructure">Automated Infrastructure</a>
@@ -20,9 +33,11 @@ _Want to add something? Open a PR!_ 🙂
 ### Getting Started
   - [The Hitchhikers Guide to AWS ECS and Docker](http://start.jcolemorrison.com/the-hitchhikers-guide-to-aws-ecs-and-docker/) by [J. Cole Morrison](https://twitter.com/JColeMorrison) - Introduction to AWS ECS concepts
   - [Working with AWS ECS](https://blog.rackspace.com/working-aws-ecs) by [Sriram Rajan](https://twitter.com/sriramrajan) of Rackspace
-  - [Up and running using only the command line](https://mdln.net/articles/ecs-walkthrough.html) - Great guide by [Madeleine Thompson](https://github.com/madeleineth), perfect for the CLI lovers among us
 
 ### Automated Infrastructure
+
+Tools to help you set up a cluster of EC2 hosts for ECS to use to run your docker containers:
+
   - [CloudFormation ECS](https://github.com/awslabs/ecs-refarch-cloudformation) - Reference architecture for deploying microservices to ECS in tiered VPC with NAT gateways and two availability zones.
   - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
   - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
@@ -31,6 +46,9 @@ _Want to add something? Open a PR!_ 🙂
   - [ecsq](https://github.com/mightyguava/ecsq) - A developer friendly tool for querying the state of an ECS cluster
 
 ### Build and Deploy Tools
+
+Tools to help you interact with ECS to launch your containers on your cluster of self managed EC2 instances:
+
   - [coldbrew](https://github.com/coldbrewcloud/coldbrew-cli) - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically
   - [ecs-cli](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
   - [empire](https://github.com/remind101/empire/blob/master/README.md) - Control layer on top of ECS that provides a Heroku like workflow
@@ -45,6 +63,9 @@ _Want to add something? Open a PR!_ 🙂
   - [ecspresso](https://github.com/kayac/ecspresso) - Minimalistic: JSON file goes in, service launches
 
 ### Implementation Guides
+
+Examples of how to do advanced customizations on your ECS cluster:
+
   * <a name="autoscaling" /> __Autoscaling__
     - [Autoscaling services in ECS](https://www.codementor.io/jholub/amazon-ecs-auto-scale-docker-containers-6keydo24n) - How to autoscale the number of service tasks
     - [Autoscaling the cluster in ECS](http://garbe.io/blog/2016/10/17/docker-on-ecs-scale-your-ecs-cluster-automatically/) - How to autoscale the number of EC2 instances in a cluster
