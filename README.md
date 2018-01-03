@@ -1,4 +1,4 @@
-# [<img src="ecs-logo.png" width="30%">](https://aws.amazon.com/ecs/) [<img src="fargate-logo.png" width="30%">](https://aws.amazon.com/fargate/)
+# [<img src="ecs-logo.png" width="30%">](https://aws.amazon.com/ecs/) [<img src="fargate-logo.png" width="35%">](https://aws.amazon.com/fargate/)
 
 A curated list of guides, development tools, and resources for [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
 
