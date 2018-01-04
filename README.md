@@ -109,6 +109,7 @@ Examples of how to do advanced customizations on your ECS cluster:
   - [NGINX Reverse Proxy sidecar container on AWS ECS](https://github.com/awslabs/ecs-nginx-reverse-proxy)
   - [Deploying a Deep Learning Framework on ECS](https://github.com/awslabs/ecs-deep-learning-workshop)
   - [Powering your Amazon ECS Cluster with Amazon EC2 Spot Instances](https://github.com/awslabs/ec2-spot-labs/tree/master/ecs-ec2-spot-fleet)
+  - [Reactive Microservices Architectures with Amazon ECS, AWS Lambda, Amazon Kinesis Streams, Amazon ElastiCache, and Amazon DynamoDB](https://github.com/aws-samples/reactive-refarch-cloudformation)
 
 ### Continuous Integration / Continuous Deployment
   * __CI/CD using:__
