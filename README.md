@@ -141,3 +141,8 @@ Examples of how to do advanced customizations on your ECS cluster:
    - [Nextdoor](https://nextdoor.com) - [How Nextdoor made a 10x improvement in release times with Docker and Amazon ECS](https://engblog.nextdoor.com/how-nextdoor-made-a-10x-improvement-in-release-times-with-docker-and-amazon-ecs-35aab52b726f)
    - [MapBox](https://mapbox.com) - [We switched to Amazon ECS and you won't believe what happened next](https://blog.mapbox.com/we-switched-to-amazon-ecs-and-you-wont-believe-what-happened-next-6cadbbf7282c)
    - [Wrapp - On how EC2 Container service simplified our infrastructure stack](https://medium.com/wrapp-tech/on-microservices-and-ecs-wrapp-90665d6c0339)
+   - [Docker on AWS: from containerization to orchestration](http://mherman.org/blog/2017/11/16/docker-on-aws-from-containerization-to-orchestration)
+
+### Courses
+
+  - [Microservices with Docker, Flask, and React](https://testdriven.io/) - Learn how to build, test, and deploy microservices powered by Docker, Flask, React Amazon ECS!
