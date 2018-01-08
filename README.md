@@ -15,6 +15,7 @@ _Want to add something? Open a PR!_ 🙂
 
 - [fargate](http://somanymachines.com/fargate/) - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.
 - [CloudFormation Templates](https://github.com/nathanpeck/aws-cloudformation-fargate) - Sample CloudFormation templates to help you spin up a Fargate cluster, and service in that cluster automatically
+- [Deploying a Rails app to Fargate](http://blog.scoutapp.com/articles/2018/01/08/deploying-to-aws-part-i-running-a-rails-app-on-fargate) - Step by step walkthrough of deploying a Ruby + RDS app, with helpful debugging tips
 
 <br />
 
