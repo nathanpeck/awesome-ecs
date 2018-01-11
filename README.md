@@ -13,9 +13,15 @@ _Want to add something? Open a PR!_ 🙂
 
 ## AWS Fargate
 
+### Setting up Fargate
+
 - [fargate](http://somanymachines.com/fargate/) - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.
 - [CloudFormation Templates](https://github.com/nathanpeck/aws-cloudformation-fargate) - Sample CloudFormation templates to help you spin up a Fargate cluster, and service in that cluster automatically
+
+### Application Deployments in Fargate
+
 - [Deploying a Rails app to Fargate](http://blog.scoutapp.com/articles/2018/01/08/deploying-to-aws-part-i-running-a-rails-app-on-fargate) - Step by step walkthrough of deploying a Ruby + RDS app, with helpful debugging tips
+- [How to use AWS Fargate and Lambda for long-running processes in a Serverless app](https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/) - Great tutorial showing how to leverage the power of long running docker containers in Fargate alongside Lambda. Example application processes video files to extract thumbnails using just S3, Lambda, and Fargate... no EC2.
 
 <br />
 
