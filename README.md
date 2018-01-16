@@ -56,7 +56,7 @@ Examples of using tools to describe your ECS infrastructure as code, for automat
 
 Tools to help you interact with ECS to launch your containers on your cluster of self managed EC2 instances:
 
-  - [coldbrew](https://github.com/coldbrewcloud/coldbrew-cli) - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically
+  - [coldbrew](https://github.com/coldbrewcloud/coldbrew-cli) - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically. Has a great developer experience for day to day use
   - [ecs-cli](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
   - [empire](https://github.com/remind101/empire/blob/master/README.md) - Control layer on top of ECS that provides a Heroku like workflow
   - [broadside](https://github.com/lumoslabs/broadside/) - Ruby based command line tool for deploying to ECS
