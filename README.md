@@ -56,7 +56,7 @@ Tools to help you set up a cluster of EC2 hosts for ECS to use to run your docke
 Tools to help you interact with ECS to launch your containers on your cluster of self managed EC2 instances:
 
   - [coldbrew](https://github.com/coldbrewcloud/coldbrew-cli) - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically
-  - [mu](https://github.com/stelligent/mu) - Automated everything from devops, to your CI/CD pipeline, to your ECS cluster. This framework lets you write a simple metadata file and it constructs all the infrastructure you need so that you can deploy to ECS by simply pushing to your Git repo.
+  - [mu](https://github.com/stelligent/mu) - Automates everything relating to ECS devops and CI/CD. This framework lets you write a simple metadata file and it constructs all the infrastructure you need so that you can deploy to ECS by simply pushing to your Git repo.
   - [ecs-cli](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
   - [empire](https://github.com/remind101/empire/blob/master/README.md) - Control layer on top of ECS that provides a Heroku like workflow
   - [broadside](https://github.com/lumoslabs/broadside/) - Ruby based command line tool for deploying to ECS
