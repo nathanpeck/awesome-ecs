@@ -60,7 +60,7 @@ Tools to help you interact with ECS to launch your containers on your cluster of
   - [ecs-cli](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
   - [empire](https://github.com/remind101/empire/blob/master/README.md) - Control layer on top of ECS that provides a Heroku like workflow
   - [broadside](https://github.com/lumoslabs/broadside/) - Ruby based command line tool for deploying to ECS
-  - [uFO](http://ufoships.com/) - Ruby based tool for building containers and shipping them to ECS
+  - [UFO](http://ufoships.com/) - Ruby based tool for building containers and shipping them to ECS
   - [bash deployment script](https://spin.atomicobject.com/2017/06/06/ecs-deployment-script/) by [Justin Kulesza](https://twitter.com/JustinKulesza)
   - [pnzr](https://github.com/jobtalk/pnzr) - Go based tool for building and pushing to ECS, also has integraton with AWS KMS for secrets management.
   - [deplojo](https://github.com/LabD/ecs-deplojo) - Python based deployment tool using ECS
