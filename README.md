@@ -28,10 +28,10 @@ _Want to add something? Open a PR!_ 🙂
 ## Self hosted in EC2
 
 - <a href="#getting-started">Getting Started</a>
-- <a href="#automated-infrastructure">Automated Infrastructure</a>
+- <a href="#infrastructure-as-code">Infrastructure as Code</a>
 - <a href="#build-and-deploy-tools">Build and Deploy Tools</a>
 - <a href="#implementation-guides">Implementation Guides</a>
-- <a href="#open-source-tools">Open Source Tools</a>
+- <a href="#open-source">Open Source</a>
 - <a href="#reference-architectures">Reference Architectures</a>
 - <a href="#continuous-integration--continuous-deployment">Continuous Integration / Continuous Deployment</a>
 - <a href="#presentations">Presentations</a>
@@ -41,22 +41,22 @@ _Want to add something? Open a PR!_ 🙂
   - [The Hitchhikers Guide to AWS ECS and Docker](http://start.jcolemorrison.com/the-hitchhikers-guide-to-aws-ecs-and-docker/) by [J. Cole Morrison](https://twitter.com/JColeMorrison) - Introduction to AWS ECS concepts
   - [Working with AWS ECS](https://blog.rackspace.com/working-aws-ecs) by [Sriram Rajan](https://twitter.com/sriramrajan) of Rackspace
 
-### Automated Infrastructure
+### Infrastructure as Code
 
-Tools to help you set up a cluster of EC2 hosts for ECS to use to run your docker containers:
+Examples of using tools to describe your ECS infrastructure as code, for automation of deployments:
 
+   - [mu](https://github.com/stelligent/mu) - Automates everything relating to ECS devops and CI/CD. This framework lets you write a simple metadata file and it constructs all the infrastructure you need so that you can deploy to ECS by simply pushing to your Git repo.
   - [CloudFormation ECS](https://github.com/awslabs/ecs-refarch-cloudformation) - Reference architecture for deploying microservices to ECS in tiered VPC with NAT gateways and two availability zones.
   - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
   - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
-  - [Deployfish](https://github.com/caltechads/deployfish) by [Caltech ADS](http://ads.caltech.edu/) - Manage your whole application lifecycle in Amazon ECS
   - [ecsq](https://github.com/mightyguava/ecsq) - A developer friendly tool for querying the state of an ECS cluster
-
+  - [deployfish](https://github.com/caltechads/deployfish) - Write a simplified `deployfish.yml` file describing your deployment and let this tool handle the heavy lifting of deploying your service.
+  
 ### Build and Deploy Tools
 
 Tools to help you interact with ECS to launch your containers on your cluster of self managed EC2 instances:
 
   - [coldbrew](https://github.com/coldbrewcloud/coldbrew-cli) - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically
-  - [mu](https://github.com/stelligent/mu) - Automates everything relating to ECS devops and CI/CD. This framework lets you write a simple metadata file and it constructs all the infrastructure you need so that you can deploy to ECS by simply pushing to your Git repo.
   - [ecs-cli](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
   - [empire](https://github.com/remind101/empire/blob/master/README.md) - Control layer on top of ECS that provides a Heroku like workflow
   - [broadside](https://github.com/lumoslabs/broadside/) - Ruby based command line tool for deploying to ECS
@@ -101,7 +101,7 @@ Examples of how to do advanced customizations on your ECS cluster:
     - [Part One: Intro](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
     - [Part Two: Our First dockerfile](https://www.stevejgordon.co.uk/docker-for-dotnet-developers-part-2)
 
-### Other Open Source Tools
+### Open Source
   - [Blox](https://blox.github.io/) - Framework for advanced cluster management and scheduling
   - [Watchbot](https://github.com/mapbox/ecs-watchbot) - This tool by [Mapbox](https://www.mapbox.com/) helps you run data processing across an ECS cluster in response to external events
   - [ecs-export](https://github.com/slok/ecs-exporter) - A tool for exporting ECS cluster metrics to Prometheus for advanced querying
