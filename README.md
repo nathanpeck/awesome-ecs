@@ -82,6 +82,7 @@ Examples of how to do advanced customizations on your ECS cluster:
     - [Scale in script in Python](https://medium.com/@dinushad92/scale-down-ec2-container-instances-in-ecs-fb97f895ac9c)
   * __Networking__
     - [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
+    - [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container 
   * <a name="service-discovery" /> __Service Discovery__
     - [Using DNS](https://github.com/awslabs/ecs-refarch-service-discovery/)
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
