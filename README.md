@@ -68,6 +68,7 @@ Tools to help you interact with ECS to launch your containers on your cluster of
   - [ecsctl](https://github.com/cxmcc/ecsctl) - Open source tool similar to Kubernetes `kubectl` for ECS.
   - [ecs-deploy](https://github.com/silinternational/ecs-deploy) - Simple but powerful tool for initiating automatic blue green deploys on ECS
   - [ecspresso](https://github.com/kayac/ecspresso) - Minimalistic: JSON file goes in, service launches
+  - [shipctl](https://github.com/SKAhack/shipctl) - Tool that supports deploying a task on ECS, rolling back, or just running a one-off task.
 
 ### Implementation Guides
 
