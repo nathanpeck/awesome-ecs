@@ -113,7 +113,7 @@ Examples of how to do advanced customizations on your ECS cluster:
 
 ### Reference Architectures
   - [Microservice cloudformation stack](https://github.com/awslabs/ecs-refarch-cloudformation)
-  - [Sock shop microservices demo on Amazon ECS](https://microservices-demo.github.io/microservices-demo/deployment/ecs.html)
+  - [Sock shop microservices demo on Amazon ECS](https://github.com/microservices-demo/microservices-demo)
   - [Node.js Microservices](https://github.com/awslabs/amazon-ecs-nodejs-microservices)
   - [Java Microservices on AWS ECS](https://github.com/awslabs/amazon-ecs-java-microservices)
   - [Swift ECS Workshop](https://github.com/awslabs/swift-ecs-workshop)
