@@ -46,6 +46,7 @@ _Want to add something? Open a PR!_ 🙂
 Examples of using tools to describe your ECS infrastructure as code, for automation of deployments:
 
    - [mu](https://github.com/stelligent/mu) - Automates everything relating to ECS devops and CI/CD. This framework lets you write a simple metadata file and it constructs all the infrastructure you need so that you can deploy to ECS by simply pushing to your Git repo.
+  - [Sample cloudformation templates for ECS](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - Examples of launching containers with both public, and private networking, behind a public facing load balancer, as well as behind a private, internal load balancer.
   - [CloudFormation ECS](https://github.com/awslabs/ecs-refarch-cloudformation) - Reference architecture for deploying microservices to ECS in tiered VPC with NAT gateways and two availability zones.
   - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
   - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
