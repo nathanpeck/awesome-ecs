@@ -128,6 +128,7 @@ Examples of how to do advanced customizations on your ECS cluster:
   * __CI/CD using:__
     - [AWS CodePipeline](https://github.com/awslabs/ecs-refarch-continuous-deployment)
     - [Atlassian Bamboo](https://bitbucket.org/atlassian/per-build-container)
+    - [JetBrains TeamCity](https://blog.jetbrains.com/teamcity/2017/11/teamcity-aws-ec2-container-service/)
     - [Lambda](https://medium.com/@YadavPrakshi/automate-zero-downtime-deployment-with-amazon-ecs-and-lambda-c4e49953273d)
     - [CircleCI](https://github.com/circleci/go-ecs-ecr)
     - [Shippable](http://blog.shippable.com/continuous-delivery-from-github-to-amazon-ecs)
