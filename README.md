@@ -53,7 +53,7 @@ Examples of using tools to describe your ECS infrastructure as code, for automat
   - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
   - [ecsq](https://github.com/mightyguava/ecsq) - A developer friendly tool for querying the state of an ECS cluster
   - [deployfish](https://github.com/caltechads/deployfish) - Write a simplified `deployfish.yml` file describing your deployment and let this tool handle the heavy lifting of deploying your service.
-  
+
 ### Build and Deploy Tools
 
 Tools to help you interact with ECS to launch your containers on your cluster of self managed EC2 instances:
@@ -85,13 +85,13 @@ Examples of how to do advanced customizations on your ECS cluster:
     - [Scale in script in Python](https://medium.com/@dinushad92/scale-down-ec2-container-instances-in-ecs-fb97f895ac9c)
   * __Networking__
     - [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
-    - [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container 
+    - [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container
   * <a name="service-discovery" /> __Service Discovery__
     - [Using DNS](https://github.com/awslabs/ecs-refarch-service-discovery/)
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
     - [Using linkerd](https://medium.com/attest-engineering/linkerd-a-service-mesh-for-aws-ecs-937f201f847a)
-    - [Using HAProxy](https://medium.com/ground-signal-engineering/ecs-service-discovery-with-lambda-dns-and-haproxy-1126ab381688) 
+    - [Using HAProxy](https://medium.com/ground-signal-engineering/ecs-service-discovery-with-lambda-dns-and-haproxy-1126ab381688)
   * __Data Persistance__
     - [Using Amazon Elastic File System](https://aws.amazon.com/blogs/compute/using-amazon-efs-to-persist-data-from-amazon-ecs-containers/)
   * __Secrets Management__
@@ -159,3 +159,4 @@ Examples of how to do advanced customizations on your ECS cluster:
 ### Courses
 
   - [Microservices with Docker, Flask, and React](https://testdriven.io/) - Learn how to build, test, and deploy microservices powered by Docker, Flask, React Amazon ECS!
+  - [ECS Workshop using AWS Fargate and Mu](https://ecsworkshop.com/) - Learn how to deploy a 3 tier, polyglot, microservice based application to AWS Fargate for ECS using the Mu framework!
