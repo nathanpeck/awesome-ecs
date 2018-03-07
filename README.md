@@ -125,6 +125,7 @@ Examples of how to do advanced customizations on your ECS cluster:
   - [Deploying a Deep Learning Framework on ECS](https://github.com/awslabs/ecs-deep-learning-workshop)
   - [Powering your Amazon ECS Cluster with Amazon EC2 Spot Instances](https://github.com/awslabs/ec2-spot-labs/tree/master/ecs-ec2-spot-fleet)
   - [Reactive Microservices Architectures with Amazon ECS, AWS Lambda, Amazon Kinesis Streams, Amazon ElastiCache, and Amazon DynamoDB](https://github.com/aws-samples/reactive-refarch-cloudformation)
+  - [Cats n' Dogs](https://github.com/aws-samples/amazon-ecs-catsndogs-workshop) - A fun workshop that covers service and container-instance auto-scaling, spot-fleet integration, container placement strategies, service discovery, secrets management with AWS Systems Manager Parameter Store, among other things.
 
 ### Continuous Integration / Continuous Deployment
   * __CI/CD using:__
