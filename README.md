@@ -73,6 +73,8 @@ Tools to help you interact with ECS to launch your containers on your cluster of
   - [ecspresso](https://github.com/kayac/ecspresso) - Minimalistic: JSON file goes in, service launches
   - [shipctl](https://github.com/SKAhack/shipctl) - Tool that supports deploying a task on ECS, rolling back, or just running a one-off task
   - [ecsdeploy](https://github.com/in4it/ecs-deploy) - A client and simplified web interface for managing your ECS cluster, rolling out and rolling back application versions
+  - [ecs-service](https://github.com/ukayani/ecs-service) - CLI tool for deploying to ECS using CloudFormation with support for .env files for environment specific configuration of your containers
+  - [kms-env](https://github.com/ukayani/kms-env) - CLI tool for managing secrets using AWS KMS in .env files which can be used in conjunction with **ecs-service** to supply secrets to your containers
 
 ### Implementation Guides
 
@@ -160,7 +162,7 @@ Examples of how to do advanced customizations on your ECS cluster:
    - [Jimdo - Container Based Crons](https://dev.jimdo.com/container-based-crons-at-jimdo)
    - [Wrapp - On how EC2 Container service simplified our infrastructure stack](https://medium.com/wrapp-tech/on-microservices-and-ecs-wrapp-90665d6c0339)
    - [Docker on AWS: from containerization to orchestration](http://mherman.org/blog/2017/11/16/docker-on-aws-from-containerization-to-orchestration)
-
+   - [Deploying Distributed Stateful Applications on ECS - Akka Cluster as an example](https://medium.com/@ukayani/deploying-clustered-akka-applications-on-amazon-ecs-fbcca762a44c)
 ### Courses
 
   - [Microservices with Docker, Flask, and React](https://testdriven.io/) - Learn how to build, test, and deploy microservices powered by Docker, Flask, React Amazon ECS!
