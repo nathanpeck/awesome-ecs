@@ -91,6 +91,7 @@ Examples of how to do advanced customizations on your ECS cluster:
     - [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
     - [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container
   * <a name="service-discovery" /> __Service Discovery__
+    - [Using built-in Route53 service discovery](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html)
     - [Using DNS](https://github.com/awslabs/ecs-refarch-service-discovery/)
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
