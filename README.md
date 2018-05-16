@@ -167,6 +167,7 @@ Examples of how to do advanced customizations on your ECS cluster:
    - [Docker on AWS: from containerization to orchestration](http://mherman.org/blog/2017/11/16/docker-on-aws-from-containerization-to-orchestration)
    - [Deploying Distributed Stateful Applications on ECS - Akka Cluster as an example](https://medium.com/@ukayani/deploying-clustered-akka-applications-on-amazon-ecs-fbcca762a44c)
    - [Migration of our video encoder to AWS](https://medium.com/@fabricebaumann/migration-of-our-video-encoder-to-aws-e5c3ad61e8d3) - How and why Pornhub moved massive amounts of video encoding from Mesos to an autoscaling ECS cluster on AWS
+   - [Realtor](https://www.realtor.com/) - [A Better ECS](https://techblog.realtor.com/a-better-ecs/)
    
 ### Courses
 
