@@ -143,7 +143,7 @@ Examples of how to do advanced customizations on your ECS cluster:
     - [Lambda](https://medium.com/@YadavPrakshi/automate-zero-downtime-deployment-with-amazon-ecs-and-lambda-c4e49953273d)
     - [CircleCI](https://github.com/circleci/go-ecs-ecr)
     - [Shippable](http://blog.shippable.com/continuous-delivery-from-github-to-amazon-ecs)
-    - [Gitlab](http://jeanphix.me/2017/06/14/how-to-configure-a-gitlab-ecs-continuous-deployment-pipeline/)
+    - [Gitlab](https://jeanphix.github.io/2017/06/14/how-to-configure-a-gitlab-ecs-continuous-deployment-pipeline/)
     - [SemaphoreCI](https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-dockerized-node-js-application-to-aws-ecs)
   * __CI/CD mechanics:__
     - [Rolling blue/green deploy in place](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
