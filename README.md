@@ -18,6 +18,11 @@ _Want to add something? Open a PR!_ 🙂
 - [fargate](http://somanymachines.com/fargate/) - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.
 - [CloudFormation Templates](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - Sample CloudFormation templates to help you spin up a Fargate cluster, and service in that cluster automatically
 - [Terraform](https://thecode.pub/easy-deploy-your-docker-applications-to-aws-using-ecs-and-fargate-a988a1cc842f) - Use Terraform to deploy your docker containers in Fargate
+- [fargate-create](https://github.com/turnerlabs/fargate-create) - A CLI tool for creating new projects based on Terraform templates and [Fargate CLI](https://github.com/turnerlabs/fargate). Supported stacks:
+  - [Web Application (ALB - HTTP/HTTPS)](https://github.com/turnerlabs/terraform-ecs-fargate)
+  - [Network Application (NLB)](https://github.com/turnerlabs/terraform-ecs-fargate-nlb)
+  - [Background Worker (Service)](https://github.com/turnerlabs/terraform-ecs-fargate-background-worker)
+  - [Scheduled Task (Job)](https://github.com/turnerlabs/terraform-ecs-fargate-scheduled-task)
 
 ### Application Deployments in Fargate
 
