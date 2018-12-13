@@ -83,6 +83,7 @@ Tools to help you interact with ECS to launch your containers on your cluster of
   - [ecsdeploy](https://github.com/in4it/ecs-deploy) - A client and simplified web interface for managing your ECS cluster, rolling out and rolling back application versions
   - [ecs-service](https://github.com/ukayani/ecs-service) - CLI tool for deploying to ECS using CloudFormation with support for .env files for environment specific configuration of your containers
   - [kms-env](https://github.com/ukayani/kms-env) - CLI tool for managing secrets using AWS KMS in .env files which can be used in conjunction with **ecs-service** to supply secrets to your containers
+  - [Chaos Toolkit](https://docs.chaostoolkit.org/drivers/aws/#ecs) - Chaos toolkit supports ECS as a target for [chaos engineering](https://principlesofchaos.org/)
 
 ### Implementation Guides
 
