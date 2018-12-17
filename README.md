@@ -18,6 +18,7 @@ _Want to add something? Open a PR!_ 🙂
 - [fargate](http://somanymachines.com/fargate/) - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.
 - [CloudFormation Templates](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - Sample CloudFormation templates to help you spin up a Fargate cluster, and service in that cluster automatically
 - [Terraform](https://thecode.pub/easy-deploy-your-docker-applications-to-aws-using-ecs-and-fargate-a988a1cc842f) - Use Terraform to deploy your docker containers in Fargate
+- [Terraform Airship Modules](https://airship.tf/getting_started/) Full getting started guide to setup your Fargate ECS Services.
 - [fargate-create](https://github.com/turnerlabs/fargate-create) - A CLI tool for creating new projects based on Terraform templates and [Fargate CLI](https://github.com/turnerlabs/fargate). Supported stacks:
   - [Web Application (ALB - HTTP/HTTPS)](https://github.com/turnerlabs/terraform-ecs-fargate)
   - [Network Application (NLB)](https://github.com/turnerlabs/terraform-ecs-fargate-nlb)
@@ -59,6 +60,7 @@ Examples of using tools to describe your ECS infrastructure as code, for automat
   - [Sample CloudFormation templates for ECS](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - Examples of launching containers with both public, and private networking, behind a public facing load balancer, as well as behind a private, internal load balancer.
   - [CloudFormation ECS](https://github.com/awslabs/ecs-refarch-cloudformation) - Reference architecture for deploying microservices to ECS in tiered VPC with NAT gateways and two availability zones.
   - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
+  - [Airship Terraform ECS](https://airship.tf) by [Maarten van der Hoef et al.](https://airship.tf/introduction/#team) - Multiple highly documented ECS Modules for deploying ECS Clusters and Services with Terraform
   - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
   - [ecsq](https://github.com/mightyguava/ecsq) - A developer friendly tool for querying the state of an ECS cluster
   - [deployfish](https://github.com/caltechads/deployfish) - Write a simplified `deployfish.yml` file describing your deployment and let this tool handle the heavy lifting of deploying your service.
