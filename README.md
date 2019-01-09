@@ -71,7 +71,7 @@ Tools to help you interact with ECS to launch your containers on your cluster of
 
   - [coldbrew](https://github.com/coldbrewcloud/coldbrew-cli) - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically. Has a great developer experience for day to day use
   - [ecs-cli](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
-  - [empire](https://github.com/remind101/empire/blob/master/README.md) - Control layer on top of ECS that provides a Heroku like workflow
+  - [empire](https://github.com/remind101/empire) - Control layer on top of ECS that provides a Heroku like workflow
   - [broadside](https://github.com/lumoslabs/broadside/) - Ruby based command line tool for deploying to ECS
   - [UFO](http://ufoships.com/) - Ruby based tool for building containers and shipping them to ECS
   - [bash deployment script](https://spin.atomicobject.com/2017/06/06/ecs-deployment-script/) by [Justin Kulesza](https://twitter.com/JustinKulesza)
