@@ -184,6 +184,6 @@ Examples of how to do advanced customizations on your ECS cluster:
    
 ### Courses
 
-  - [Microservices with Docker, Flask, and React](https://testdriven.io/) - Learn how to build, test, and deploy microservices powered by Docker, Flask, React Amazon ECS!
+  - [Microservices with Docker, Flask, and React](https://testdriven.io/) - Learn how to build, test, and deploy microservices powered by Docker, Flask, and React on Amazon ECS!
   - [ECS Workshop using AWS Fargate and Mu](https://ecsworkshop.com/) - Learn how to deploy a 3 tier, polyglot, microservice based application to AWS Fargate for ECS using the Mu framework!
   - [AWS Developer: Optimizing on AWS](https://courses.edx.org/courses/course-v1:AWS+OTP-AWSD3+1T2018/course/) - Learn how you can optimize your applications on AWS with Amazon ECS! 
