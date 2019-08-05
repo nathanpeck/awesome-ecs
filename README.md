@@ -98,6 +98,7 @@ Examples of how to do advanced customizations on your ECS cluster:
     - [Lambda based approach for cluster scale-in](https://github.com/omerxx/ecscale)
     - [Extending ECS autoscaling for under $2 a month with Lambda](https://www.miketheman.net/2017/01/09/extending-ecs-auto-scaling-for-under-2month-with-lambda/)
     - [Scale in script in Python](https://medium.com/@dinushad92/scale-down-ec2-container-instances-in-ecs-fb97f895ac9c)
+    - [Scale in script in GO](https://github.com/gmdutra/ecs-scaling)
   * __Networking__
     - [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
     - [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container
