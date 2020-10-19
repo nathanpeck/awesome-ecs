@@ -67,6 +67,7 @@ Examples of using tools to describe your ECS infrastructure as code, for automat
   - [deployfish](https://github.com/caltechads/deployfish) - Write a simplified `deployfish.yml` file describing your deployment and let this tool handle the heavy lifting of deploying your service.
   - [AWS Copilot](https://aws.github.io/copilot-cli/) - CLI tool for developers to build, release and operate production ready containerized applications on Amazon ECS and AWS Fargate.
 
+
 ### Build and Deploy Tools
 
 Tools to help you interact with ECS to launch your containers on your cluster of self managed EC2 instances:
@@ -82,6 +83,7 @@ Tools to help you interact with ECS to launch your containers on your cluster of
   - [ecsctl](https://github.com/cxmcc/ecsctl) - Open source tool similar to Kubernetes `kubectl` for ECS.
   - [ecs-deploy](https://github.com/silinternational/ecs-deploy) - Simple but powerful tool for initiating automatic blue green deploys on ECS
   - [ecspresso](https://github.com/kayac/ecspresso) - Minimalistic: JSON file goes in, service launches
+  - [ecsrun](https://github.com/masterpointio/ecsrun) - Easily run one-off tasks against an ECS Task Definition using a config file based approach.
   - [shipctl](https://github.com/SKAhack/shipctl) - Tool that supports deploying a task on ECS, rolling back, or just running a one-off task
   - [ecsdeploy](https://github.com/in4it/ecs-deploy) - A client and simplified web interface for managing your ECS cluster, rolling out and rolling back application versions
   - [ecs-service](https://github.com/ukayani/ecs-service) - CLI tool for deploying to ECS using CloudFormation with support for .env files for environment specific configuration of your containers
