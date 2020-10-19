@@ -65,6 +65,7 @@ Examples of using tools to describe your ECS infrastructure as code, for automat
   - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
   - [ecsq](https://github.com/mightyguava/ecsq) - A developer friendly tool for querying the state of an ECS cluster
   - [deployfish](https://github.com/caltechads/deployfish) - Write a simplified `deployfish.yml` file describing your deployment and let this tool handle the heavy lifting of deploying your service.
+  - [AWS Copilot](https://aws.github.io/copilot-cli/) - CLI tool for developers to build, release and operate production ready containerized applications on Amazon ECS and AWS Fargate.
 
 ### Build and Deploy Tools
 
@@ -86,6 +87,7 @@ Tools to help you interact with ECS to launch your containers on your cluster of
   - [ecs-service](https://github.com/ukayani/ecs-service) - CLI tool for deploying to ECS using CloudFormation with support for .env files for environment specific configuration of your containers
   - [kms-env](https://github.com/ukayani/kms-env) - CLI tool for managing secrets using AWS KMS in .env files which can be used in conjunction with **ecs-service** to supply secrets to your containers
   - [Chaos Toolkit](https://docs.chaostoolkit.org/drivers/aws/#ecs) - Chaos toolkit supports ECS as a target for [chaos engineering](https://principlesofchaos.org/)
+  - [Docker Compose ECS integration](https://docs.docker.com/engine/context/ecs-integration/) - Use native Docker commands to run applications in Amazon ECS.
 
 ### Implementation Guides
 
