@@ -26,6 +26,7 @@ _Want to add something? Open a PR!_ 🙂
 
 ### Application Deployments in Fargate
 
+- [Run a PHP application on AWS Fargate](https://www.codedge.de/posts/20200419-run-php-application-on-aws-fargate/) - An in-depth guide to run a Laravel app on AWS Fargate with Github Actions for deployment
 - [Deploying a Rails app to Fargate](http://blog.scoutapp.com/articles/2018/01/08/deploying-to-aws-part-i-running-a-rails-app-on-fargate) - Step by step walkthrough of deploying a Ruby + RDS app, with helpful debugging tips
 - [How to use AWS Fargate and Lambda for long-running processes in a Serverless app](https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/) - Great tutorial showing how to leverage the power of long running docker containers in Fargate alongside Lambda. Example application processes video files to extract thumbnails using just S3, Lambda, and Fargate... no EC2.
 - [Microservice CI/CD to AWS Fargate](https://ecsworkshop.com/) - Learn how to use Stelligent Mu to setup a CI/CD pipeline for deploying a 3 tier, polyglot, microservice based application to AWS Fargate
