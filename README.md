@@ -76,8 +76,12 @@ _Want to add something? Open a PR!_ 🙂
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
     - [Using linkerd](https://medium.com/attest-engineering/linkerd-a-service-mesh-for-aws-ecs-937f201f847a)
     - [Using HAProxy](https://medium.com/ground-signal-engineering/ecs-service-discovery-with-lambda-dns-and-haproxy-1126ab381688)
+- __Service Mesh__
+    - [AWS App Mesh](https://docs.aws.amazon.com/app-mesh/latest/userguide/getting-started-ecs.html)
+    - [Consul Connect](https://containersonaws.com/architecture/consul-connect-service-mesh/)
+    - [Linkerd 1.x](https://containersonaws.com/architecture/linkerd-1x-consul-service-mesh/)
 - __Data Persistance__
-    - [Using Amazon Elastic File System](https://aws.amazon.com/blogs/compute/using-amazon-efs-to-persist-data-from-amazon-ecs-containers/)
+    - [Using Amazon Elastic File System](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-efs-volumes.html)
 - __Secrets Management__
     - [Using Parameter Store and IAM Roles for Tasks](https://aws.amazon.com/blogs/compute/managing-secrets-for-amazon-ecs-applications-using-parameter-store-and-iam-roles-for-tasks/)
     - [Using ECS Task roles for managing AWS credentials](https://medium.com/@RemindEng/keeping-aws-secrets-secret-with-ecs-ec4a51517b4d)
@@ -88,7 +92,7 @@ _Want to add something? Open a PR!_ 🙂
     - [Monitor cluster state with Cloudwatch event stream](https://aws.amazon.com/blogs/compute/monitor-cluster-state-with-amazon-ecs-event-stream/)
     - [React to ECS events such as crashed containers using a serverless function](https://medium.com/@laardee/subscribe-to-aws-ecs-event-stream-using-serverless-framework-74de3db66ddb)
     - [Run an ECS Task on every cluster instance](https://aws.amazon.com/blogs/compute/running-an-amazon-ecs-task-on-every-instance/)
-* __CI/CD using:__
+- __CI/CD__
     - [AWS CodePipeline](https://github.com/awslabs/ecs-refarch-continuous-deployment)
     - [Atlassian Bamboo](https://bitbucket.org/atlassian/per-build-container)
     - [JetBrains TeamCity](https://blog.jetbrains.com/teamcity/2017/11/teamcity-aws-ec2-container-service/)
