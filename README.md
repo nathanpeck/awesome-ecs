@@ -81,6 +81,7 @@ _Want to add something? Open a PR!_ 🙂
     - [AWS Developer: Optimizing on AWS](https://courses.edx.org/courses/course-v1:AWS+OTP-AWSD3+1T2018/course/) - Learn how you can optimize your applications on AWS with Amazon ECS! 
     - [Udemy: ECS Deep Dive](https://www.udemy.com/course/aws-ecs-deep-insight/)
     - [Cloud Academy: Introduction to ECS](https://cloudacademy.com/course/introduction-to-amazon-ecs-services/introduction-41/)
+    - [Coursera: Building Containerized Applications on AWS](https://www.coursera.org/lecture/containerized-apps-on-aws/introduction-to-week-3-0owxp)
 
 ### Solutions
 
