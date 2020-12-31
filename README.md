@@ -69,6 +69,17 @@ _Want to add something? Open a PR!_ 🙂
   - [Wonqa](https://www.npmjs.com/package/wonqa) is a tool for spinning up disposable QA environments in AWS Fargate, with SSL enabled by Let's Encrypt. More details about Wonqa on the [Wonder Engineering blog](https://medium.com/wonder-engineering/on-demand-qa-environments-with-aws-fargate-c23b41f15a0c).
 </details>
 
+### Courses
+
+  - __Free__
+    - [ECS Workshop](https://ecsworkshop.com/) - Learn how to deploy a 3 tier, polyglot, microservice based application to AWS Fargate
+    - [Simplilearn: AWS ECS Tutorial](https://www.youtube.com/watch?v=46mFdtpy3NQ)
+  - __Paid__
+    - [Microservices with Docker, Flask, and React](https://testdriven.io/courses/aws-flask-react/) - Learn how to build, test, and deploy microservices powered by Docker, Flask, and React on Amazon ECS!
+    - [AWS Developer: Optimizing on AWS](https://courses.edx.org/courses/course-v1:AWS+OTP-AWSD3+1T2018/course/) - Learn how you can optimize your applications on AWS with Amazon ECS! 
+    - [Udemy: ECS Deep Dive](https://www.udemy.com/course/aws-ecs-deep-insight/)
+    - [Cloud Academy: Introduction to ECS](https://cloudacademy.com/course/introduction-to-amazon-ecs-services/introduction-41/)
+
 ### Solutions
 
 - <a name="service-discovery" /> __Service Discovery__
@@ -107,7 +118,7 @@ _Want to add something? Open a PR!_ 🙂
     - [Rolling blue/green deploy in place](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
     - [Canary Deploy](https://github.com/awslabs/ecs-canary-blue-green-deployment)
     - [Isolated Regression Testing](https://aws.amazon.com/blogs/compute/amazon-ecs-at-the-climate-corporation-using-ecr-and-multiple-accounts-for-isolated-regression-testing/)
-
+   
 ### Open Source
   - [Watchbot](https://github.com/mapbox/ecs-watchbot) - This tool by [Mapbox](https://www.mapbox.com/) helps you run data processing across an ECS cluster in response to external events
   - [ecs-export](https://github.com/slok/ecs-exporter) - A tool for exporting ECS cluster metrics to Prometheus for advanced querying
@@ -161,8 +172,3 @@ _Want to add something? Open a PR!_ 🙂
    - [Realtor](https://www.realtor.com/) - [A Better ECS](https://techblog.realtor.com/a-better-ecs/)
    - [Building Blocks of Amazon ECS](https://medium.com/containers-on-aws/building-blocks-of-amazon-ecs-db7fdfeeaa6f) - Learn about the basic building blocks of ECS and how they fit together to fully understand how it works and how you can use it!
    
-### Courses
-
-  - [Microservices with Docker, Flask, and React](https://testdriven.io/) - Learn how to build, test, and deploy microservices powered by Docker, Flask, and React on Amazon ECS!
-  - [ECS Workshop using AWS Fargate and Mu](https://ecsworkshop.com/) - Learn how to deploy a 3 tier, polyglot, microservice based application to AWS Fargate for ECS using the Mu framework!
-  - [AWS Developer: Optimizing on AWS](https://courses.edx.org/courses/course-v1:AWS+OTP-AWSD3+1T2018/course/) - Learn how you can optimize your applications on AWS with Amazon ECS! 
