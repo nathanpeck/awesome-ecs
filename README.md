@@ -25,13 +25,13 @@ _Want to add something? Open a PR!_ 🙂
 ### Pick a tool for deploying your application
 
 - [AWS Copilot](https://aws.github.io/copilot-cli/) - The easiest starting experience for launching your local container on Fargate. This commandline tool helps you build and deploy your application, as well as deploy CI/CD pipelines that automatically rebuild and redeploy your application on Git push. It creates infrastructure as code templates for you behind the scenes.
-- [CloudFormation](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - You can choose to use CloudFormation templates directly, in which case these sample templates will help.
-- [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
 - [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) - AWS CDK is an SDK that lets developers define and deploy AWS infrastructure using familiar programming languages, often the same language that the application itself is coded in. CDK creates CloudFormation automatically behind the scenes.
   - [aws-ecs](https://www.npmjs.com/package/@aws-cdk/aws-ecs) - This module provides simple low level constructs for creating ECS and Fargate services. It gets about 100k downloads per week on NPM, so it is quite popular as a choice.
   - [aws-ecs-patterns](https://www.npmjs.com/package/@aws-cdk/aws-ecs-patterns) - A more beginner friendly interface to CDK. These patterns help you setup simple things like a "load balanced service" or a "scheduled task"
   - [ecs-service-extensions](https://www.npmjs.com/package/@aws-cdk-containers/ecs-service-extensions) - This CDK module provides the most extendable interface for ECS services. It lets you deploy an ECS service and then optionally attach extensions to it, which do things like add the service to a service mesh, or add an observability sidecar, etc.
 - [Docker Compose](https://docs.docker.com/engine/context/ecs-integration/) - If you use Docker Compose to launch your containers locally it now has an integration to deploy containers directly to ECS.
+- [CloudFormation](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - You can choose to write CloudFormation templates to describe your deployment directly, in which case these sample templates will help.
+- [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
 - [Troposphere + ECS](https://github.com/cloudtools/troposphere/blob/master/examples/ECSFargate.py) - For Python users [Troposphere](https://github.com/cloudtools/troposphere) can help create CloudFormation templates. This example shows how to create an ECS deployment using Troposphere
   
 <details>
