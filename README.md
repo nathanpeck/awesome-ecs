@@ -29,7 +29,7 @@ _Want to add something? Open a PR!_ 🙂
 - [Docker Compose](https://docs.docker.com/engine/context/ecs-integration/) - If you use Docker Compose to launch your containers locally it now has an integration to deploy containers directly to ECS.
   
 <details>
-  <summary>Older tools</summary>
+  <summary><b>Older tools</b></summary>
   
   The following tools may not be as up-to-date or maintained, but are retained here for reference:
 
