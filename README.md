@@ -109,6 +109,7 @@ _Want to add something? Open a PR!_ 🙂
     - [Monitor cluster state with Cloudwatch event stream](https://aws.amazon.com/blogs/compute/monitor-cluster-state-with-amazon-ecs-event-stream/)
     - [React to ECS events such as crashed containers using a serverless function](https://medium.com/@laardee/subscribe-to-aws-ecs-event-stream-using-serverless-framework-74de3db66ddb)
     - [Run an ECS Task on every cluster instance](https://aws.amazon.com/blogs/compute/running-an-amazon-ecs-task-on-every-instance/)
+    - [Accessing Rails console inside of an ECS task](https://github.com/mnc/rails-console-ecs)
 - __CI/CD__
     - [AWS CodePipeline](https://github.com/awslabs/ecs-refarch-continuous-deployment)
     - [Atlassian Bamboo](https://bitbucket.org/atlassian/per-build-container)
