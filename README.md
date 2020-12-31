@@ -2,6 +2,8 @@
 
 A curated list of guides, development tools, and resources for [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
 
+Also see [Containers from the Couch](https://containersfromthecouch.com/) for videos on all things AWS + containers.
+
 _Want to add something? Open a PR!_ 🙂
 
 ### First steps
@@ -65,17 +67,7 @@ _Want to add something? Open a PR!_ 🙂
   - [Wonqa](https://www.npmjs.com/package/wonqa) is a tool for spinning up disposable QA environments in AWS Fargate, with SSL enabled by Let's Encrypt. More details about Wonqa on the [Wonder Engineering blog](https://medium.com/wonder-engineering/on-demand-qa-environments-with-aws-fargate-c23b41f15a0c).
 </details>
 
-### Solution specific articles
-
-- [Run a PHP application on AWS Fargate](https://www.codedge.de/posts/20200419-run-php-application-on-aws-fargate/) - An in-depth guide to run a Laravel app on AWS Fargate with Github Actions for deployment
-- [Deploying a Rails app to Fargate](http://blog.scoutapp.com/articles/2018/01/08/deploying-to-aws-part-i-running-a-rails-app-on-fargate) - Step by step walkthrough of deploying a Ruby + RDS app, with helpful debugging tips
-- [How to use AWS Fargate and Lambda for long-running processes in a Serverless app](https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/) - Great tutorial showing how to leverage the power of long running docker containers in Fargate alongside Lambda. Example application processes video files to extract thumbnails using just S3, Lambda, and Fargate... no EC2.
-- [Setting up service discovery for AWS Fargate using CloudFormation](https://paul.annesley.cc/ecs-service-discovery-cloudformation/)
-- [Using the Clair image scanner with Fargate, ECR and CodeBuild/CodePipeline](https://github.com/jasonumiker/clair-ecs-fargate)
-- [A lighter way to deploy to ECS/Fargate](https://ramblingsofasoftwaredevelopermanager.wordpress.com/2019/05/18/a-lighter-way-to-deploy-to-aws-ecs/) - combining update-service/task data from several sources including metadata of the docker image itself to deploy new versions.
-- [Chaos testing with ECS](https://docs.chaostoolkit.org/drivers/aws/#ecs) - Chaos toolkit supports ECS as a target for [chaos engineering](https://principlesofchaos.org/)
-- [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
-- [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container
+### Solutions
 
 - <a name="service-discovery" /> __Service Discovery__
     - [Using built-in Route53 service discovery](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html)
@@ -96,9 +88,15 @@ _Want to add something? Open a PR!_ 🙂
     - [Monitor cluster state with Cloudwatch event stream](https://aws.amazon.com/blogs/compute/monitor-cluster-state-with-amazon-ecs-event-stream/)
     - [React to ECS events such as crashed containers using a serverless function](https://medium.com/@laardee/subscribe-to-aws-ecs-event-stream-using-serverless-framework-74de3db66ddb)
     - [Run an ECS Task on every cluster instance](https://aws.amazon.com/blogs/compute/running-an-amazon-ecs-task-on-every-instance/)
-- __Docker for .NET Developers__
-    - [Part One: Intro](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
-    - [Part Two: Our First dockerfile](https://www.stevejgordon.co.uk/docker-for-dotnet-developers-part-2)
+* __CI/CD using:__
+    - [AWS CodePipeline](https://github.com/awslabs/ecs-refarch-continuous-deployment)
+    - [Atlassian Bamboo](https://bitbucket.org/atlassian/per-build-container)
+    - [JetBrains TeamCity](https://blog.jetbrains.com/teamcity/2017/11/teamcity-aws-ec2-container-service/)
+    - [Lambda](https://medium.com/@YadavPrakshi/automate-zero-downtime-deployment-with-amazon-ecs-and-lambda-c4e49953273d)
+    - [CircleCI](https://github.com/circleci/go-ecs-ecr)
+    - [Shippable](http://blog.shippable.com/continuous-delivery-from-github-to-amazon-ecs)
+    - [Gitlab](https://jeanphix.github.io/2017/06/14/how-to-configure-a-gitlab-ecs-continuous-deployment-pipeline/)
+    - [SemaphoreCI](https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-dockerized-node-js-application-to-aws-ecs)
 
 ### Open Source
   - [Watchbot](https://github.com/mapbox/ecs-watchbot) - This tool by [Mapbox](https://www.mapbox.com/) helps you run data processing across an ECS cluster in response to external events
@@ -118,19 +116,26 @@ _Want to add something? Open a PR!_ 🙂
   - [Cats n' Dogs](https://github.com/aws-samples/amazon-ecs-catsndogs-workshop) - A fun workshop that covers service and container-instance auto-scaling, spot-fleet integration, container placement strategies, service discovery, secrets management with AWS Systems Manager Parameter Store, among other things.
 
 ### Continuous Integration / Continuous Deployment
-  * __CI/CD using:__
-    - [AWS CodePipeline](https://github.com/awslabs/ecs-refarch-continuous-deployment)
-    - [Atlassian Bamboo](https://bitbucket.org/atlassian/per-build-container)
-    - [JetBrains TeamCity](https://blog.jetbrains.com/teamcity/2017/11/teamcity-aws-ec2-container-service/)
-    - [Lambda](https://medium.com/@YadavPrakshi/automate-zero-downtime-deployment-with-amazon-ecs-and-lambda-c4e49953273d)
-    - [CircleCI](https://github.com/circleci/go-ecs-ecr)
-    - [Shippable](http://blog.shippable.com/continuous-delivery-from-github-to-amazon-ecs)
-    - [Gitlab](https://jeanphix.github.io/2017/06/14/how-to-configure-a-gitlab-ecs-continuous-deployment-pipeline/)
-    - [SemaphoreCI](https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-dockerized-node-js-application-to-aws-ecs)
+  
   * __CI/CD mechanics:__
     - [Rolling blue/green deploy in place](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
     - [Canary Deploy](https://github.com/awslabs/ecs-canary-blue-green-deployment)
     - [Isolated Regression Testing](https://aws.amazon.com/blogs/compute/amazon-ecs-at-the-climate-corporation-using-ecr-and-multiple-accounts-for-isolated-regression-testing/)
+    
+### Blogposts
+
+- [Run a PHP application on AWS Fargate](https://www.codedge.de/posts/20200419-run-php-application-on-aws-fargate/) - An in-depth guide to run a Laravel app on AWS Fargate with Github Actions for deployment
+- [Deploying a Rails app to Fargate](http://blog.scoutapp.com/articles/2018/01/08/deploying-to-aws-part-i-running-a-rails-app-on-fargate) - Step by step walkthrough of deploying a Ruby + RDS app, with helpful debugging tips
+- [How to use AWS Fargate and Lambda for long-running processes in a Serverless app](https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/) - Great tutorial showing how to leverage the power of long running docker containers in Fargate alongside Lambda. Example application processes video files to extract thumbnails using just S3, Lambda, and Fargate... no EC2.
+- [Setting up service discovery for AWS Fargate using CloudFormation](https://paul.annesley.cc/ecs-service-discovery-cloudformation/)
+- [Using the Clair image scanner with Fargate, ECR and CodeBuild/CodePipeline](https://github.com/jasonumiker/clair-ecs-fargate)
+- [A lighter way to deploy to ECS/Fargate](https://ramblingsofasoftwaredevelopermanager.wordpress.com/2019/05/18/a-lighter-way-to-deploy-to-aws-ecs/) - combining update-service/task data from several sources including metadata of the docker image itself to deploy new versions.
+- [Chaos testing with ECS](https://docs.chaostoolkit.org/drivers/aws/#ecs) - Chaos toolkit supports ECS as a target for [chaos engineering](https://principlesofchaos.org/)
+- [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
+- [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container
+- __Docker for .NET Developers__
+    - [Part One: Intro](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
+    - [Part Two: Our First dockerfile](https://www.stevejgordon.co.uk/docker-for-dotnet-developers-part-2)
 
 ### Presentations
   - [Running your Dockerized application(s) on AWS EC2 Container Service](https://speakerdeck.com/mpas/running-your-dockerized-application-s-on-aws-ec2-container-service) by [Marco Pas](https://twitter.com/marcopas)
