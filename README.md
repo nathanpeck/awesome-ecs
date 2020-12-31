@@ -17,8 +17,6 @@ _Want to add something? Open a PR!_ 🙂
   - [Capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) - ECS capacity providers automatically launch and stop EC2 instances on your account so you always have enough capacity to run your containers.
 - [ECS Anywhere](https://aws.amazon.com/blogs/containers/introducing-amazon-ecs-anywhere/) - You can connect ECS to your own on-premise datacenter or machine and ECS can use it as capacity to run your tasks
 
-<br />
-
 ### Pick a tool for deploying your application
 
 - [AWS Copilot](https://aws.github.io/copilot-cli/) - The easiest starting experience for launching your local container on Fargate. This commandline tool helps you build and deploy your application, as well as deploy CI/CD pipelines that automatically rebuild and redeploy your application on Git push. It creates infrastructure as code templates for you behind the scenes.
