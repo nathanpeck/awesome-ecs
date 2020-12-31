@@ -15,14 +15,16 @@ _Want to add something? Open a PR!_ 🙂
 
 ### Setting up Fargate
 
-- [fargate](http://somanymachines.com/fargate/) - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.
+- [AWS Copilot](https://aws.github.io/copilot-cli/) - The easiest starting experience for launching your local container on Fargate. This commandline tool helps you not only deploy your application, but also deploy CI/CD pipelines that automatically rebuild and redeploy your application on Git push.
 - [CloudFormation Templates](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - Sample CloudFormation templates to help you spin up a Fargate cluster, and service in that cluster automatically
-- [Terraform Airship Modules](https://airship.tf/getting_started/) Full getting started guide to setup your Fargate ECS Services.
-- [fargate-create](https://github.com/turnerlabs/fargate-create) - A CLI tool for creating new projects based on Terraform templates and [Fargate CLI](https://github.com/turnerlabs/fargate). Supported stacks:
-  - [Web Application (ALB - HTTP/HTTPS)](https://github.com/turnerlabs/terraform-ecs-fargate)
-  - [Network Application (NLB)](https://github.com/turnerlabs/terraform-ecs-fargate-nlb)
-  - [Background Worker (Service)](https://github.com/turnerlabs/terraform-ecs-fargate-background-worker)
-  - [Scheduled Task (Job)](https://github.com/turnerlabs/terraform-ecs-fargate-scheduled-task)
+- [Terraform Airship Modules](https://airship.tf/getting_started/) - If you prefer Terraform these modules can help you get started with Fargate
+- Other command line tools:
+  - [fargate](http://somanymachines.com/fargate/) - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.
+  - [fargate-create](https://github.com/turnerlabs/fargate-create) - A CLI tool for creating new projects based on Terraform templates and [Fargate CLI](https://github.com/turnerlabs/fargate). Supported stacks:
+    - [Web Application (ALB - HTTP/HTTPS)](https://github.com/turnerlabs/terraform-ecs-fargate)
+    - [Network Application (NLB)](https://github.com/turnerlabs/terraform-ecs-fargate-nlb)
+    - [Background Worker (Service)](https://github.com/turnerlabs/terraform-ecs-fargate-background-worker)
+    - [Scheduled Task (Job)](https://github.com/turnerlabs/terraform-ecs-fargate-scheduled-task)
 
 ### Application Deployments in Fargate
 
