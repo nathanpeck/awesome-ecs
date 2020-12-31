@@ -103,6 +103,10 @@ _Want to add something? Open a PR!_ 🙂
     - [Shippable](http://blog.shippable.com/continuous-delivery-from-github-to-amazon-ecs)
     - [Gitlab](https://jeanphix.github.io/2017/06/14/how-to-configure-a-gitlab-ecs-continuous-deployment-pipeline/)
     - [SemaphoreCI](https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-dockerized-node-js-application-to-aws-ecs)
+- __CI/CD mechanics:__
+    - [Rolling blue/green deploy in place](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
+    - [Canary Deploy](https://github.com/awslabs/ecs-canary-blue-green-deployment)
+    - [Isolated Regression Testing](https://aws.amazon.com/blogs/compute/amazon-ecs-at-the-climate-corporation-using-ecr-and-multiple-accounts-for-isolated-regression-testing/)
 
 ### Open Source
   - [Watchbot](https://github.com/mapbox/ecs-watchbot) - This tool by [Mapbox](https://www.mapbox.com/) helps you run data processing across an ECS cluster in response to external events
@@ -120,15 +124,8 @@ _Want to add something? Open a PR!_ 🙂
   - [Powering your Amazon ECS Cluster with Amazon EC2 Spot Instances](https://github.com/awslabs/ec2-spot-labs/tree/master/ecs-ec2-spot-fleet)
   - [Reactive Microservices Architectures with Amazon ECS, AWS Lambda, Amazon Kinesis Streams, Amazon ElastiCache, and Amazon DynamoDB](https://github.com/aws-samples/reactive-refarch-cloudformation)
   - [Cats n' Dogs](https://github.com/aws-samples/amazon-ecs-catsndogs-workshop) - A fun workshop that covers service and container-instance auto-scaling, spot-fleet integration, container placement strategies, service discovery, secrets management with AWS Systems Manager Parameter Store, among other things.
-
-### Continuous Integration / Continuous Deployment
-  
-  * __CI/CD mechanics:__
-    - [Rolling blue/green deploy in place](https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/)
-    - [Canary Deploy](https://github.com/awslabs/ecs-canary-blue-green-deployment)
-    - [Isolated Regression Testing](https://aws.amazon.com/blogs/compute/amazon-ecs-at-the-climate-corporation-using-ecr-and-multiple-accounts-for-isolated-regression-testing/)
     
-### Blogposts
+### Blogs
 
 - [Run a PHP application on AWS Fargate](https://www.codedge.de/posts/20200419-run-php-application-on-aws-fargate/) - An in-depth guide to run a Laravel app on AWS Fargate with Github Actions for deployment
 - [Deploying a Rails app to Fargate](http://blog.scoutapp.com/articles/2018/01/08/deploying-to-aws-part-i-running-a-rails-app-on-fargate) - Step by step walkthrough of deploying a Ruby + RDS app, with helpful debugging tips
@@ -139,9 +136,7 @@ _Want to add something? Open a PR!_ 🙂
 - [Chaos testing with ECS](https://docs.chaostoolkit.org/drivers/aws/#ecs) - Chaos toolkit supports ECS as a target for [chaos engineering](https://principlesofchaos.org/)
 - [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
 - [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container
-- __Docker for .NET Developers__
-    - [Part One: Intro](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
-    - [Part Two: Our First dockerfile](https://www.stevejgordon.co.uk/docker-for-dotnet-developers-part-2)
+- [Docker for .NET Developers](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
 
 ### Presentations
   - [Running your Dockerized application(s) on AWS EC2 Container Service](https://speakerdeck.com/mpas/running-your-dockerized-application-s-on-aws-ec2-container-service) by [Marco Pas](https://twitter.com/marcopas)
