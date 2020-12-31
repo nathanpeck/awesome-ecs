@@ -32,6 +32,7 @@ _Want to add something? Open a PR!_ 🙂
   - [aws-ecs-patterns](https://www.npmjs.com/package/@aws-cdk/aws-ecs-patterns) - A more beginner friendly interface to CDK. These patterns help you setup simple things like a "load balanced service" or a "scheduled task"
   - [ecs-service-extensions](https://www.npmjs.com/package/@aws-cdk-containers/ecs-service-extensions) - This CDK module provides the most extendable interface for ECS services. It lets you deploy an ECS service and then optionally attach extensions to it, which do things like add the service to a service mesh, or add an observability sidecar, etc.
 - [Docker Compose](https://docs.docker.com/engine/context/ecs-integration/) - If you use Docker Compose to launch your containers locally it now has an integration to deploy containers directly to ECS.
+- [Troposphere + ECS](https://github.com/cloudtools/troposphere/blob/master/examples/ECSFargate.py) - For Python users [Troposphere](https://github.com/cloudtools/troposphere) can help create CloudFormation templates. This example shows how to create an ECS deployment using Troposphere
   
 <details>
   <summary><b>Older tools</b></summary>
@@ -128,6 +129,7 @@ _Want to add something? Open a PR!_ 🙂
     - [Sample task definitions](https://github.com/aws-samples/aws-containers-task-definitions) - Sample task definitions for running applications like Nginx, Tomcat, Gunicorn, Wildfly, Kibana, and Jetty as containers under Amazon ECS
 
 ### Reference Architectures
+  - [ECS Microservices Orchestration](https://github.com/msfidelis/ecs-microservices-orchestration) - Automated deployment for complete ECS Fargate Cluster using Terraform. This template provide features like Service Discovery with Cloudmap, Autoscaling, Container Insights, Workers, Scheduled tasks, Public and Private Services, Blue/Green deployment, ALB routing and CI/CD using CodePipeline and CodeBuild.
   - [Sock shop microservices demo on Amazon ECS](https://github.com/microservices-demo/microservices-demo)
   - [Node.js Microservices](https://github.com/awslabs/amazon-ecs-nodejs-microservices)
   - [Java Microservices on AWS ECS](https://github.com/awslabs/amazon-ecs-java-microservices)
