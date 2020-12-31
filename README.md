@@ -4,78 +4,51 @@ A curated list of guides, development tools, and resources for [Amazon Elastic C
 
 _Want to add something? Open a PR!_ 🙂
 
+### First steps
+
+- [The Hitchhikers Guide to AWS ECS and Docker](http://start.jcolemorrison.com/the-hitchhikers-guide-to-aws-ecs-and-docker/) by [J. Cole Morrison](https://twitter.com/JColeMorrison) - Introduction to AWS ECS concepts
+- [ECS Workshop](https://ecsworkshop.com/) - A detailed workshop that guides you through creating a simple microservice deployment, load testing it, and monitoring it.
+- [AWS Copilot](https://aws.github.io/copilot-cli/docs/getting-started/first-app-tutorial/) - The getting started guide for AWS Copilot helps you deploy your first simple static website container on Fargate.
+
 ### Pick your container hosting strategy:
 
-- <a href="#aws-fargate">AWS Fargate</a> - AWS Fargate is a technology for Amazon ECS that allows you to run containers without having to manage servers or clusters.
-- <a href="#self-hosted-in-ec2">Self hosted in EC2</a> - Running your own cluster of EC2 instances to host your containers gives you the most control over price (ability to run on spot instances or reserved instances) as well as configuration.
+- <a href="https://aws.amazon.com/fargate/">AWS Fargate</a> - AWS Fargate allows you to launch containers directly using the ECS API, without having to manage any EC2 servers. You are billed for the amount of CPU and memory you provisioned for the container.
+- __Self managed EC2__ - For really large deployments running your own cluster of EC2 instances to host your containers gives you the most control over price and configuration. You are billed for the underlying EC2 instance as long as it runs, no matter whether it was running containers or not, so it is your responsibility to keep those EC2 instances busy if you want to be cost efficient.
+  - [Capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) - ECS capacity providers automatically launch and stop EC2 instances on your account so you always have enough capacity to run your containers.
+- [ECS Anywhere](https://aws.amazon.com/blogs/containers/introducing-amazon-ecs-anywhere/) - You can connect ECS to your own on-premise datacenter or machine and ECS can use it as capacity to run your tasks
 
 <br />
 
-## AWS Fargate
+### Pick a tool for deploying your application
 
-### Setting up Fargate
+- [AWS Copilot](https://aws.github.io/copilot-cli/) - The easiest starting experience for launching your local container on Fargate. This commandline tool helps you build and deploy your application, as well as deploy CI/CD pipelines that automatically rebuild and redeploy your application on Git push. It creates infrastructure as code templates for you behind the scenes.
+- [CloudFormation](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - You can choose to use CloudFormation templates directly, in which case these sample templates will help.
+- [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
+- [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) - AWS CDK is an SDK that lets developers define and deploy AWS infrastructure using familiar programming languages, often the same language that the application itself is coded in. CDK creates CloudFormation automatically behind the scenes.
+  - [aws-ecs](https://www.npmjs.com/package/@aws-cdk/aws-ecs) - This module provides simple low level constructs for creating ECS and Fargate services. It gets about 100k downloads per week on NPM, so it is quite popular as a choice.
+  - [aws-ecs-patterns](https://www.npmjs.com/package/@aws-cdk/aws-ecs-patterns) - A more beginner friendly interface to CDK. These patterns help you setup simple things like a "load balanced service" or a "scheduled task"
+  - [ecs-service-extensions](https://www.npmjs.com/package/@aws-cdk-containers/ecs-service-extensions) - This CDK module provides the most extendable interface for ECS services. It lets you deploy an ECS service and then optionally attach extensions to it, which do things like add the service to a service mesh, or add an observability sidecar, etc.
+- [Docker Compose](https://docs.docker.com/engine/context/ecs-integration/) - If you use Docker Compose to launch your containers locally it now has an integration to deploy containers directly to ECS.
+  
+<details>
+  <summary>Older tools</summary>
+  
+  The following tools may not be as up-to-date or maintained, but are retained here for reference:
 
-- [AWS Copilot](https://aws.github.io/copilot-cli/) - The easiest starting experience for launching your local container on Fargate. This commandline tool helps you not only deploy your application, but also deploy CI/CD pipelines that automatically rebuild and redeploy your application on Git push.
-- [CloudFormation Templates](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - Sample CloudFormation templates to help you spin up a Fargate cluster, and service in that cluster automatically
-- [Terraform Airship Modules](https://airship.tf/getting_started/) - If you prefer Terraform these modules can help you get started with Fargate
-- Other command line tools:
+  - [ECS CLI v1](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI.html) - The original CLI for ECS is designed to be mostly compatible
+     with Docker Compose. It turns a local Docker Compose file into a remote deployment.
   - [fargate](http://somanymachines.com/fargate/) - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.
   - [fargate-create](https://github.com/turnerlabs/fargate-create) - A CLI tool for creating new projects based on Terraform templates and [Fargate CLI](https://github.com/turnerlabs/fargate). Supported stacks:
     - [Web Application (ALB - HTTP/HTTPS)](https://github.com/turnerlabs/terraform-ecs-fargate)
     - [Network Application (NLB)](https://github.com/turnerlabs/terraform-ecs-fargate-nlb)
     - [Background Worker (Service)](https://github.com/turnerlabs/terraform-ecs-fargate-background-worker)
     - [Scheduled Task (Job)](https://github.com/turnerlabs/terraform-ecs-fargate-scheduled-task)
-
-### Application Deployments in Fargate
-
-- [Run a PHP application on AWS Fargate](https://www.codedge.de/posts/20200419-run-php-application-on-aws-fargate/) - An in-depth guide to run a Laravel app on AWS Fargate with Github Actions for deployment
-- [Deploying a Rails app to Fargate](http://blog.scoutapp.com/articles/2018/01/08/deploying-to-aws-part-i-running-a-rails-app-on-fargate) - Step by step walkthrough of deploying a Ruby + RDS app, with helpful debugging tips
-- [How to use AWS Fargate and Lambda for long-running processes in a Serverless app](https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/) - Great tutorial showing how to leverage the power of long running docker containers in Fargate alongside Lambda. Example application processes video files to extract thumbnails using just S3, Lambda, and Fargate... no EC2.
-- [Microservice CI/CD to AWS Fargate](https://ecsworkshop.com/) - Learn how to use Stelligent Mu to setup a CI/CD pipeline for deploying a 3 tier, polyglot, microservice based application to AWS Fargate
-- [Wonqa](https://www.npmjs.com/package/wonqa) is a tool for spinning up disposable QA environments in AWS Fargate, with SSL enabled by Let's Encrypt. More details about Wonqa on the [Wonder Engineering blog](https://medium.com/wonder-engineering/on-demand-qa-environments-with-aws-fargate-c23b41f15a0c).
-- [Setting up service discovery for AWS Fargate using CloudFormation](https://paul.annesley.cc/ecs-service-discovery-cloudformation/)
-- [Using the Clair image scanner with Fargate, ECR and CodeBuild/CodePipeline](https://github.com/jasonumiker/clair-ecs-fargate)
-- [A lighter way to deploy to ECS/Fargate](https://ramblingsofasoftwaredevelopermanager.wordpress.com/2019/05/18/a-lighter-way-to-deploy-to-aws-ecs/) - combining update-service/task data from several sources including metadata of the docker image itself to deploy new versions.
-
-<br />
-
-## Self hosted in EC2
-
-- <a href="#getting-started">Getting Started</a>
-- <a href="#infrastructure-as-code">Infrastructure as Code</a>
-- <a href="#build-and-deploy-tools">Build and Deploy Tools</a>
-- <a href="#implementation-guides">Implementation Guides</a>
-- <a href="#open-source">Open Source</a>
-- <a href="#reference-architectures">Reference Architectures</a>
-- <a href="#continuous-integration--continuous-deployment">Continuous Integration / Continuous Deployment</a>
-- <a href="#presentations">Presentations</a>
-- <a href="#tech-blogs">Tech Blogs</a>
-
-### Getting Started
-  - [The Hitchhikers Guide to AWS ECS and Docker](http://start.jcolemorrison.com/the-hitchhikers-guide-to-aws-ecs-and-docker/) by [J. Cole Morrison](https://twitter.com/JColeMorrison) - Introduction to AWS ECS concepts
-  - [Working with AWS ECS](https://blog.rackspace.com/working-aws-ecs) by [Sriram Rajan](https://twitter.com/sriramrajan) of Rackspace
-
-### Infrastructure as Code
-
-Examples of using tools to describe your ECS infrastructure as code, for automation of deployments:
-
-   - [mu](https://github.com/stelligent/mu) - Automates everything relating to ECS devops and CI/CD. This framework lets you write a simple metadata file and it constructs all the infrastructure you need so that you can deploy to ECS by simply pushing to your Git repo.
-  - [Sample CloudFormation templates for ECS](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - Examples of launching containers with both public, and private networking, behind a public facing load balancer, as well as behind a private, internal load balancer.
-  - [CloudFormation ECS](https://github.com/awslabs/ecs-refarch-cloudformation) - Reference architecture for deploying microservices to ECS in tiered VPC with NAT gateways and two availability zones.
-  - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
-  - [Airship Terraform ECS](https://airship.tf) by [Maarten van der Hoef et al.](https://airship.tf/introduction/#team) - Multiple highly documented ECS Modules for deploying ECS Clusters and Services with Terraform
-  - [CloudFormation Templates by Cloudonaut](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
-  - [ecsq](https://github.com/mightyguava/ecsq) - A developer friendly tool for querying the state of an ECS cluster
+  - [mu](https://github.com/stelligent/mu) - Automates everything relating to ECS devops and CI/CD. This framework lets you write a simple metadata file and it constructs all the infrastructure you need so that you can deploy to ECS by simply pushing to your Git repo.
   - [deployfish](https://github.com/caltechads/deployfish) - Write a simplified `deployfish.yml` file describing your deployment and let this tool handle the heavy lifting of deploying your service.
-  - [AWS Copilot](https://aws.github.io/copilot-cli/) - CLI tool for developers to build, release and operate production ready containerized applications on Amazon ECS and AWS Fargate.
-
-
-### Build and Deploy Tools
-
-Tools to help you interact with ECS to launch your containers on your cluster of self managed EC2 instances:
-
-  - [ecs-cli](https://github.com/aws/amazon-ecs-cli) - Docker Compose compatible deployment tool by AWS
-  - [empire](https://github.com/remind101/empire) - Control layer on top of ECS that provides a Heroku like workflow
+  - [Airship Terraform for ECS](https://github.com/blinkist/terraform-aws-airship-ecs-service)
+  - [CloudFormation reference architecture](https://github.com/awslabs/ecs-refarch-cloudformation) - An older CloudFormation reference architecture for ECS
+  - [Cloudonaut CloudFormation templates](https://cloudonaut.io/new-cloudformation-templates-ecs-cluster-service-legacy-vpc-wrapper-automated-tests/)
+  -   - [empire](https://github.com/remind101/empire) - Control layer on top of ECS that provides a Heroku like workflow
   - [broadside](https://github.com/lumoslabs/broadside/) - Ruby based command line tool for deploying to ECS
   - [UFO](http://ufoships.com/) - Ruby based tool for building containers and shipping them to ECS
   - [bash deployment script](https://spin.atomicobject.com/2017/06/06/ecs-deployment-script/) by [Justin Kulesza](https://twitter.com/JustinKulesza)
@@ -90,55 +63,52 @@ Tools to help you interact with ECS to launch your containers on your cluster of
   - [ecsdeploy](https://github.com/in4it/ecs-deploy) - A client and simplified web interface for managing your ECS cluster, rolling out and rolling back application versions
   - [ecs-service](https://github.com/ukayani/ecs-service) - CLI tool for deploying to ECS using CloudFormation with support for .env files for environment specific configuration of your containers
   - [kms-env](https://github.com/ukayani/kms-env) - CLI tool for managing secrets using AWS KMS in .env files which can be used in conjunction with **ecs-service** to supply secrets to your containers
-  - [Chaos Toolkit](https://docs.chaostoolkit.org/drivers/aws/#ecs) - Chaos toolkit supports ECS as a target for [chaos engineering](https://principlesofchaos.org/)
-  - [Docker Compose ECS integration](https://docs.docker.com/engine/context/ecs-integration/) - Use native Docker commands to run applications in Amazon ECS.
+  - [ecsq](https://github.com/mightyguava/ecsq) - A developer friendly tool for querying the state of an ECS cluster
+  - [Wonqa](https://www.npmjs.com/package/wonqa) is a tool for spinning up disposable QA environments in AWS Fargate, with SSL enabled by Let's Encrypt. More details about Wonqa on the [Wonder Engineering blog](https://medium.com/wonder-engineering/on-demand-qa-environments-with-aws-fargate-c23b41f15a0c).
+</details>
 
-### Implementation Guides
+### Solution specific articles
 
-Examples of how to do advanced customizations on your ECS cluster:
+- [Run a PHP application on AWS Fargate](https://www.codedge.de/posts/20200419-run-php-application-on-aws-fargate/) - An in-depth guide to run a Laravel app on AWS Fargate with Github Actions for deployment
+- [Deploying a Rails app to Fargate](http://blog.scoutapp.com/articles/2018/01/08/deploying-to-aws-part-i-running-a-rails-app-on-fargate) - Step by step walkthrough of deploying a Ruby + RDS app, with helpful debugging tips
+- [How to use AWS Fargate and Lambda for long-running processes in a Serverless app](https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/) - Great tutorial showing how to leverage the power of long running docker containers in Fargate alongside Lambda. Example application processes video files to extract thumbnails using just S3, Lambda, and Fargate... no EC2.
+- [Setting up service discovery for AWS Fargate using CloudFormation](https://paul.annesley.cc/ecs-service-discovery-cloudformation/)
+- [Using the Clair image scanner with Fargate, ECR and CodeBuild/CodePipeline](https://github.com/jasonumiker/clair-ecs-fargate)
+- [A lighter way to deploy to ECS/Fargate](https://ramblingsofasoftwaredevelopermanager.wordpress.com/2019/05/18/a-lighter-way-to-deploy-to-aws-ecs/) - combining update-service/task data from several sources including metadata of the docker image itself to deploy new versions.
+- [Chaos testing with ECS](https://docs.chaostoolkit.org/drivers/aws/#ecs) - Chaos toolkit supports ECS as a target for [chaos engineering](https://principlesofchaos.org/)
+- [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
+- [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container
 
-  * <a name="autoscaling" /> __Autoscaling__
-    - [Autoscaling services in ECS](https://www.codementor.io/jholub/amazon-ecs-auto-scale-docker-containers-6keydo24n) - How to autoscale the number of service tasks
-    - [Autoscaling the cluster in ECS](http://garbe.io/blog/2016/10/17/docker-on-ecs-scale-your-ecs-cluster-automatically/) - How to autoscale the number of EC2 instances in a cluster
-    - [Advanced ECS cluster autoscaling](http://garbe.io/blog/2017/04/12/a-better-solution-to-ecs-autoscaling/) - A more advanced technique for autoscaling an ECS cluster, with more effective scale in as well as out
-    - [Lambda based approach for cluster scale-in](https://github.com/omerxx/ecscale)
-    - [Extending ECS autoscaling for under $2 a month with Lambda](https://www.miketheman.net/2017/01/09/extending-ecs-auto-scaling-for-under-2month-with-lambda/)
-    - [Scale in script in Python](https://medium.com/@dinushad92/scale-down-ec2-container-instances-in-ecs-fb97f895ac9c)
-  * __Networking__
-    - [Private subnets tutorial](https://www.topcoder.com/blog/aws-container-services-private-subnets-tutorial/)
-    - [End-to-end TLS traffic](https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-using-the-network-load-balancer-with-amazon-ecs/) - How to setup end-to-end TLS from client to container, as well as from container to container
-  * <a name="service-discovery" /> __Service Discovery__
+- <a name="service-discovery" /> __Service Discovery__
     - [Using built-in Route53 service discovery](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html)
     - [Using DNS](https://github.com/awslabs/ecs-refarch-service-discovery/)
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
     - [Using linkerd](https://medium.com/attest-engineering/linkerd-a-service-mesh-for-aws-ecs-937f201f847a)
     - [Using HAProxy](https://medium.com/ground-signal-engineering/ecs-service-discovery-with-lambda-dns-and-haproxy-1126ab381688)
-  * __Data Persistance__
+- __Data Persistance__
     - [Using Amazon Elastic File System](https://aws.amazon.com/blogs/compute/using-amazon-efs-to-persist-data-from-amazon-ecs-containers/)
-  * __Secrets Management__
+- __Secrets Management__
     - [Using Parameter Store and IAM Roles for Tasks](https://aws.amazon.com/blogs/compute/managing-secrets-for-amazon-ecs-applications-using-parameter-store-and-iam-roles-for-tasks/)
     - [Using ECS Task roles for managing AWS credentials](https://medium.com/@RemindEng/keeping-aws-secrets-secret-with-ecs-ec4a51517b4d)
     - [The right way to store secrets using Parameter Store](https://aws.amazon.com/blogs/mt/the-right-way-to-store-secrets-using-parameter-store/)
     - [Open source tool for automatically getting secrets from SSM into your docker environment](https://github.com/SignalMedia/signal-secret-service)
-  * __Administration__
+- __Administration__
     - [Automatically draining cluster instances before termination](https://aws.amazon.com/blogs/compute/how-to-automate-container-instance-draining-in-amazon-ecs/)
     - [Monitor cluster state with Cloudwatch event stream](https://aws.amazon.com/blogs/compute/monitor-cluster-state-with-amazon-ecs-event-stream/)
     - [React to ECS events such as crashed containers using a serverless function](https://medium.com/@laardee/subscribe-to-aws-ecs-event-stream-using-serverless-framework-74de3db66ddb)
     - [Run an ECS Task on every cluster instance](https://aws.amazon.com/blogs/compute/running-an-amazon-ecs-task-on-every-instance/)
-  * __Docker for .NET Developers__
+- __Docker for .NET Developers__
     - [Part One: Intro](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
     - [Part Two: Our First dockerfile](https://www.stevejgordon.co.uk/docker-for-dotnet-developers-part-2)
 
 ### Open Source
-  - [Blox](https://blox.github.io/) - Framework for advanced cluster management and scheduling
   - [Watchbot](https://github.com/mapbox/ecs-watchbot) - This tool by [Mapbox](https://www.mapbox.com/) helps you run data processing across an ECS cluster in response to external events
   - [ecs-export](https://github.com/slok/ecs-exporter) - A tool for exporting ECS cluster metrics to Prometheus for advanced querying
   - [docker-elk-ecs](https://github.com/markriggins/docker-elk-ecs) - Connecting Amazon ECS container logs to an ELK (Elasticsearch, Logstash, Kibana) stack
   - [Sample task definitions](https://github.com/aws-samples/aws-containers-task-definitions) - Sample task definitions for running applications like Nginx, Tomcat, Gunicorn, Wildfly, Kibana, and Jetty as containers under Amazon ECS
 
 ### Reference Architectures
-  - [Microservice cloudformation stack](https://github.com/awslabs/ecs-refarch-cloudformation)
   - [Sock shop microservices demo on Amazon ECS](https://github.com/microservices-demo/microservices-demo)
   - [Node.js Microservices](https://github.com/awslabs/amazon-ecs-nodejs-microservices)
   - [Java Microservices on AWS ECS](https://github.com/awslabs/amazon-ecs-java-microservices)
