@@ -2,7 +2,9 @@
 
 A curated list of guides, development tools, and resources for [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
 
-Also see [Containers from the Couch](https://containersfromthecouch.com/) for videos on all things AWS + containers.
+Do you prefer video instead? If so check out [Containers from the Couch](https://containersfromthecouch.com/) for videos on all things AWS + containers.
+
+[<img src="containers-from-the-couch.png" width="50%">](https://containersfromthecouch.com/)
 
 _Want to add something? Open a PR!_ 🙂
 
