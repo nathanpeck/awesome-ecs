@@ -35,9 +35,9 @@ _Want to add something? Open a PR!_ 🙂
 - [Troposphere + ECS](https://github.com/cloudtools/troposphere/blob/master/examples/ECSFargate.py) - For Python users [Troposphere](https://github.com/cloudtools/troposphere) can help create CloudFormation templates. This example shows how to create an ECS deployment using Troposphere
   
 <details>
-  <summary><b>Older tools</b></summary>
+  <summary><b>Other tools</b></summary>
   
-  The following tools may not be as up-to-date or maintained, but are retained here for reference:
+  Some of the following tools may not be as up-to-date or maintained, but are retained here for reference:
 
   - [ECS CLI v1](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI.html) - The original CLI for ECS is designed to be mostly compatible
      with Docker Compose. It turns a local Docker Compose file into a remote deployment.
