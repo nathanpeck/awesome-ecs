@@ -33,6 +33,7 @@ _Want to add something? Open a PR!_ 🙂
 - [CloudFormation](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - You can choose to write CloudFormation templates to describe your deployment directly, in which case these sample templates will help.
 - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
 - [Troposphere + ECS](https://github.com/cloudtools/troposphere/blob/master/examples/ECSFargate.py) - For Python users [Troposphere](https://github.com/cloudtools/troposphere) can help create CloudFormation templates. This example shows how to create an ECS deployment using Troposphere
+- [ECS Compose-X](https://github.com/compose-x/ecs_composex) Translates docker compose files & services definitions into AWS CloudFormation templates, allowing to add additional AWS Resources such as RDS, S3, DynamoDB and more. Automatically sets up IAM permissions, security groups access, and everything you need to deploy your applications to AWS.
   
 <details>
   <summary><b>Older tools</b></summary>
