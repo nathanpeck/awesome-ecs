@@ -2,6 +2,8 @@
 
 A curated list of guides, development tools, and resources for [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
 
+Are you looking for infrastructure as code templates and tutorials for ECS? [Containers on AWS](https://containersonaws.com/pattern) is the new home for CloudFormation, Terraform, and AWS Cloud Development Kit samples that make deploying with ECS fast and easy.
+
 Do you prefer video instead? If so check out [Containers from the Couch](https://containersfromthecouch.com/) for videos on all things AWS + containers.
 
 [<img src="containers-from-the-couch.png" width="50%">](https://containersfromthecouch.com/)
