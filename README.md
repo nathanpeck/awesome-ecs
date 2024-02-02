@@ -130,6 +130,7 @@ _Want to add something? Open a PR!_ 🙂
     - [ecs-export](https://github.com/slok/ecs-exporter) - A tool for exporting ECS cluster metrics to Prometheus for advanced querying
     - [docker-elk-ecs](https://github.com/markriggins/docker-elk-ecs) - Connecting Amazon ECS container logs to an ELK (Elasticsearch, Logstash, Kibana) stack
     - [Sample task definitions](https://github.com/aws-samples/aws-containers-task-definitions) - Sample task definitions for running applications like Nginx, Tomcat, Gunicorn, Wildfly, Kibana, and Jetty as containers under Amazon ECS
+    - [e1s](https://github.com/keidarcy/e1s) - Easily Manage AWS ECS Resources in Terminal(~k9s for ECS)
 
 ### Reference Architectures
   - [ECS Microservices Orchestration](https://github.com/msfidelis/ecs-microservices-orchestration) - Automated deployment for complete ECS Fargate Cluster using Terraform. This template provide features like Service Discovery with Cloudmap, Autoscaling, Container Insights, Workers, Scheduled tasks, Public and Private Services, Blue/Green deployment, ALB routing and CI/CD using CodePipeline and CodeBuild.
