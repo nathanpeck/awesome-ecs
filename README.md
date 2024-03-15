@@ -38,7 +38,7 @@ _Want to add something? Open a PR!_ 🙂
   - [aws-ecs-patterns](https://www.npmjs.com/package/@aws-cdk/aws-ecs-patterns) - A more beginner friendly interface to CDK. These patterns help you setup simple things like a "load balanced service" or a "scheduled task"
   - [ecs-service-extensions](https://www.npmjs.com/package/@aws-cdk-containers/ecs-service-extensions) - This CDK module provides the most extendable interface for ECS services. It lets you deploy an ECS service and then optionally attach extensions to it, which do things like add the service to a service mesh, or add an observability sidecar, etc. Read more about [how to build custom extensions for ECS deployments](https://containersonaws.com/pattern/ecs-service-extensions-custom-extension)
 - [CloudFormation](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - You can choose to write CloudFormation templates to describe your deployment directly, in which case these sample templates will help. Check out [prebuilt CloudFormation patterns for AWS CloudFormation and Amazon ECS + AWS Fargate](https://containersonaws.com/pattern/?tool=cloudformation)
-- [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
+- [Terraform ECS Blueprints](https://catalog.workshops.aws/ecs-solution-blueprints/en-US) - Production ready AWS ECS infrastructure as code with Terraform
 - [Troposphere + ECS](https://github.com/cloudtools/troposphere/blob/master/examples/ECSFargate.py) - For Python users [Troposphere](https://github.com/cloudtools/troposphere) can help create CloudFormation templates. This example shows how to create an ECS deployment using Troposphere
 
 <details>
@@ -87,6 +87,10 @@ _Want to add something? Open a PR!_ 🙂
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
     - [Using linkerd](https://medium.com/attest-engineering/linkerd-a-service-mesh-for-aws-ecs-937f201f847a)
     - [Using HAProxy](https://medium.com/ground-signal-engineering/ecs-service-discovery-with-lambda-dns-and-haproxy-1126ab381688)
+- __Scaling__
+    - [Amazon ECS Scalability Best Practices](https://containersonaws.com/presentations/amazon-ecs-scaling-best-practices/)
+    - [Target tracking based application scaling](https://containersonaws.com/pattern/target-tracking-scale-ecs-service-cloudformation)
+    - [Step scaling policies for application scaling](https://containersonaws.com/pattern/scale-ecs-service-cloudformation)
 - __Service Mesh__
     - [Service Connect (Envoy Proxy based service mesh built-in to Amazon ECS)](https://containersonaws.com/pattern/ecs-service-connect-aws-copilot)
     - [AWS App Mesh](https://docs.aws.amazon.com/app-mesh/latest/userguide/getting-started-ecs.html)
@@ -127,9 +131,10 @@ _Want to add something? Open a PR!_ 🙂
 
 ### Reference Architectures
   - [Bun JavaScript container that uses AWS SDK to connect to DynamoDB](https://containersonaws.com/pattern/bun-js-aws-sdk-container) - A tiny hit counter application. It demonstratres launching a Bun JavaScript container, with an IAM role that grants it access to use a DynamoDB table as it's state store.
-  - [NGINX Reverse Proxy sidecar container on AWS ECS](https://containersonaws.com/pattern/nginx-reverse-proxy-sidecar-ecs-fargate-task)
+  - [NGINX Reverse Proxy sidecar container on AWS ECS](https://containersonaws.com/pattern/nginx-reverse-proxy-sidecar-ecs-fargate-task) - A common architecture for serving a website or API from a container
   - [Mythical Misfits](https://github.com/aws-samples/amazon-ecs-mythicalmysfits-workshop) - Deploy a sample application to serverless AWS Fargate capacity
   - [Cats n' Dogs](https://github.com/aws-samples/amazon-ecs-catsndogs-workshop) - A fun workshop that covers service and container-instance auto-scaling, spot-fleet integration, container placement strategies, service discovery, secrets management with AWS Systems Manager Parameter Store, among other things.
+  - [Deploy Jupyter notebook container with Amazon ECS](https://containersonaws.com/pattern/jupyter-notebook-inference-container-cloudformation) - High cost, high performance machine learning playground, orchestrated by Amazon ECS on specialized AWS Inferentia enabled hardware.
 
 ### Courses
 
