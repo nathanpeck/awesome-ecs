@@ -1,8 +1,16 @@
-# [<img src="ecs-logo.png" width="30%">](https://aws.amazon.com/ecs/) [<img src="fargate-logo.png" width="33%">](https://aws.amazon.com/fargate/)
+# Awesome ECS
 
-A curated list of guides, development tools, and resources for [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS). This list includes both community created content as well as content created by AWS.
+A curated list of guides, development tools, and resources for:
 
-Are you looking for infrastructure as code templates and tutorials for ECS? [Containers on AWS](https://containersonaws.com/pattern) is the new home for CloudFormation, Terraform, and AWS Cloud Development Kit samples that make deploying with ECS fast and easy.
+[<img src="ecs.svg" width="32px" style="vertical-align:middle"> Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS)
+
+[<img src="fargate.svg" width="32x" style="vertical-align:middle"> AWS Fargate](https://aws.amazon.com/fargate/)
+
+This list includes both community created content as well as content created by AWS.
+
+Are you looking for infrastructure as code templates and tutorials for ECS? [Containers on AWS](https://containersonaws.com/pattern) is the home for infrastructure patterns and sample code to get your started fast.
+
+[<img src="https://containersonaws.com/images/social-card.png" width="50%" style="vertical-align:middle">](https://containersonaws.com/pattern)
 
 Do you prefer video instead? If so check out [Containers from the Couch](https://containersfromthecouch.com/) for videos on all things AWS + containers.
 
@@ -20,7 +28,7 @@ _Want to add something? Open a PR!_ 🙂
 ### Pick your container hosting strategy:
 
 - [Amazon EC2 or AWS Fargate?](https://containersonaws.com/blog/2023/ec2-or-aws-fargate/) - Which compute capacity makes more sense for your workload: serverless AWS Fargate, or EC2 instances?
-   * If you pick EC2 capacity learn about [ECS capacity providers linked to EC2 auto scaling groups](https://containersonaws.com/pattern/ecs-ec2-capacity-provider-scaling) and [running containers on EC2 spot capacity](https://containersonaws.com/pattern/ecs-spot-capacity-cluster)
+   * If you pick EC2 capacity learn about [ECS capacity providers linked to EC2 auto scaling groups](https://containersonaws.com/pattern/ecs-ec2-capacity-provider-scaling) and [running containers on EC2 spot capacity](https://containersonaws.com/pattern/ecs-spot-capacity-cluster) and consider [Bottlerocket](https://bottlerocket.dev/) as the [container focused operating system for your Amazon ECS cluster](https://containersonaws.com/pattern/ecs-ec2-bottlerocket-cluster).
 
 ### Pick a tool for deploying your application
 
@@ -32,10 +40,10 @@ _Want to add something? Open a PR!_ 🙂
 - [CloudFormation](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - You can choose to write CloudFormation templates to describe your deployment directly, in which case these sample templates will help. Check out [prebuilt CloudFormation patterns for AWS CloudFormation and Amazon ECS + AWS Fargate](https://containersonaws.com/pattern/?tool=cloudformation)
 - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
 - [Troposphere + ECS](https://github.com/cloudtools/troposphere/blob/master/examples/ECSFargate.py) - For Python users [Troposphere](https://github.com/cloudtools/troposphere) can help create CloudFormation templates. This example shows how to create an ECS deployment using Troposphere
-  
+
 <details>
   <summary><b>Older tools</b></summary>
-  
+
   The following tools may not be as up-to-date or maintained, but are retained here for reference:
 
   - [ECS CLI v1](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI.html) - The original CLI for ECS is designed to be mostly compatible
@@ -70,34 +78,24 @@ _Want to add something? Open a PR!_ 🙂
   - [Wonqa](https://www.npmjs.com/package/wonqa) is a tool for spinning up disposable QA environments in AWS Fargate, with SSL enabled by Let's Encrypt. More details about Wonqa on the [Wonder Engineering blog](https://medium.com/wonder-engineering/on-demand-qa-environments-with-aws-fargate-c23b41f15a0c).
 </details>
 
-### Courses
-
-  - __Free__
-    - [ECS Workshop](https://ecsworkshop.com/) - Learn how to deploy a 3 tier, polyglot, microservice based application to AWS Fargate
-    - [Cloudskills: The beginners guide to running Docker containers on AWS](https://www.youtube.com/watch?v=lO2wU2rcGUw)
-    - [Simplilearn: AWS ECS Tutorial](https://www.youtube.com/watch?v=46mFdtpy3NQ)
-  - __Paid__
-    - [Microservices with Docker, Flask, and React](https://testdriven.io/courses/aws-flask-react/) - Learn how to build, test, and deploy microservices powered by Docker, Flask, and React on Amazon ECS!
-    - [AWS Developer: Optimizing on AWS](https://courses.edx.org/courses/course-v1:AWS+OTP-AWSD3+1T2018/course/) - Learn how you can optimize your applications on AWS with Amazon ECS! 
-    - [Udemy: ECS Deep Dive](https://www.udemy.com/course/aws-ecs-deep-insight/)
-    - [Cloud Academy: Introduction to ECS](https://cloudacademy.com/course/introduction-to-amazon-ecs-services/introduction-41/)
-    - [Coursera: Building Containerized Applications on AWS](https://www.coursera.org/lecture/containerized-apps-on-aws/introduction-to-week-3-0owxp)
-
 ### Solutions
 
 - <a name="service-discovery" /> __Service Discovery__
     - [Using built-in AWS CloudMap service discovery]([https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html](https://containersonaws.com/pattern/service-discovery-fargate-microservice-cloud-map))
+    - [Using built-in ECS Service Connect](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html)
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
     - [Using linkerd](https://medium.com/attest-engineering/linkerd-a-service-mesh-for-aws-ecs-937f201f847a)
     - [Using HAProxy](https://medium.com/ground-signal-engineering/ecs-service-discovery-with-lambda-dns-and-haproxy-1126ab381688)
 - __Service Mesh__
+    - [Service Connect (Envoy Proxy based service mesh built-in to Amazon ECS)](https://containersonaws.com/pattern/ecs-service-connect-aws-copilot)
     - [AWS App Mesh](https://docs.aws.amazon.com/app-mesh/latest/userguide/getting-started-ecs.html)
 - __Data Persistance__
     - [Using Amazon Elastic File System example in AWS Cloud Development Kit](https://containersonaws.com/pattern/elastic-file-system-ecs-cdk)
     - [Using Amazon Elastic File System example in CloudFormation](https://containersonaws.com/pattern/cloudformation-ecs-durable-task-storage-with-efs)
     - [Using Amazon Elastic File System example in AWS Copilot](https://containersonaws.com/pattern/elastic-file-system-aws-copilots)
 - __Secrets Management__
+    - [AWS Secrets Manager + Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-tutorial.html)
     - [Using Parameter Store and IAM Roles for Tasks](https://aws.amazon.com/blogs/compute/managing-secrets-for-amazon-ecs-applications-using-parameter-store-and-iam-roles-for-tasks/)
     - [Using ECS Task roles for managing AWS credentials](https://medium.com/@RemindEng/keeping-aws-secrets-secret-with-ecs-ec4a51517b4d)
     - [The right way to store secrets using Parameter Store](https://aws.amazon.com/blogs/mt/the-right-way-to-store-secrets-using-parameter-store/)
@@ -129,16 +127,23 @@ _Want to add something? Open a PR!_ 🙂
 
 ### Reference Architectures
   - [Bun JavaScript container that uses AWS SDK to connect to DynamoDB](https://containersonaws.com/pattern/bun-js-aws-sdk-container) - A tiny hit counter application. It demonstratres launching a Bun JavaScript container, with an IAM role that grants it access to use a DynamoDB table as it's state store.
-  - [Sock shop microservices demo on Amazon ECS](https://github.com/microservices-demo/microservices-demo)
-  - [Node.js Microservices](https://github.com/awslabs/amazon-ecs-nodejs-microservices)
-  - [Java Microservices on AWS ECS](https://github.com/awslabs/amazon-ecs-java-microservices)
-  - [Swift ECS Workshop](https://github.com/awslabs/swift-ecs-workshop)
   - [NGINX Reverse Proxy sidecar container on AWS ECS](https://containersonaws.com/pattern/nginx-reverse-proxy-sidecar-ecs-fargate-task)
-  - [Deploying a Deep Learning Framework on ECS](https://github.com/awslabs/ecs-deep-learning-workshop)
-  - [Powering your Amazon ECS Cluster with Amazon EC2 Spot Instances](https://github.com/awslabs/ec2-spot-labs/tree/master/ecs-ec2-spot-fleet)
-  - [Reactive Microservices Architectures with Amazon ECS, AWS Lambda, Amazon Kinesis Streams, Amazon ElastiCache, and Amazon DynamoDB](https://github.com/aws-samples/reactive-refarch-cloudformation)
+  - [Mythical Misfits](https://github.com/aws-samples/amazon-ecs-mythicalmysfits-workshop) - Deploy a sample application to serverless AWS Fargate capacity
   - [Cats n' Dogs](https://github.com/aws-samples/amazon-ecs-catsndogs-workshop) - A fun workshop that covers service and container-instance auto-scaling, spot-fleet integration, container placement strategies, service discovery, secrets management with AWS Systems Manager Parameter Store, among other things.
-    
+
+### Courses
+
+  - __Free__
+    - [ECS Workshop](https://ecsworkshop.com/) - Learn how to deploy a 3 tier, polyglot, microservice based application to AWS Fargate
+    - [Cloudskills: The beginners guide to running Docker containers on AWS](https://www.youtube.com/watch?v=lO2wU2rcGUw)
+    - [Simplilearn: AWS ECS Tutorial](https://www.youtube.com/watch?v=46mFdtpy3NQ)
+  - __Paid__
+    - [Microservices with Docker, Flask, and React](https://testdriven.io/courses/aws-flask-react/) - Learn how to build, test, and deploy microservices powered by Docker, Flask, and React on Amazon ECS!
+    - [AWS Developer: Optimizing on AWS](https://courses.edx.org/courses/course-v1:AWS+OTP-AWSD3+1T2018/course/) - Learn how you can optimize your applications on AWS with Amazon ECS!
+    - [Udemy: ECS Deep Dive](https://www.udemy.com/course/aws-ecs-deep-insight/)
+    - [Cloud Academy: Introduction to ECS](https://cloudacademy.com/course/introduction-to-amazon-ecs-services/introduction-41/)
+    - [Coursera: Building Containerized Applications on AWS](https://www.coursera.org/lecture/containerized-apps-on-aws/introduction-to-week-3-0owxp)
+
 ### Blogs
 - [Run a PHP application on AWS Fargate](https://www.codedge.de/posts/20200419-run-php-application-on-aws-fargate/) - An in-depth guide to run a Laravel app on AWS Fargate with Github Actions for deployment
 - [Deploying a Rails app to Fargate](http://blog.scoutapp.com/articles/2018/01/08/deploying-to-aws-part-i-running-a-rails-app-on-fargate) - Step by step walkthrough of deploying a Ruby + RDS app, with helpful debugging tips
@@ -160,4 +165,3 @@ _Want to add something? Open a PR!_ 🙂
   - [Instacart on running microservices on Amazon ECS](https://www.youtube.com/watch?v=CtALTTjy7Qw)
   - [Building Next-Generation Applications with Amazon ECS](https://www.youtube.com/watch?v=xIc3WT6kAVw) - How Meteor Built Galaxy on Amazon ECS
   - [Amazon ECS at Coursera: A General Purpose Microservice](https://www.slideshare.net/AmazonWebServices/cmp406-amazon-ecs-at-coursera-a-generalpurpose-microservice)
-
