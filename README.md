@@ -81,7 +81,7 @@ _Want to add something? Open a PR!_ 🙂
 ### Solutions
 
 - <a name="service-discovery" /> __Service Discovery__
-    - [Using built-in AWS CloudMap service discovery]([https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html](https://containersonaws.com/pattern/service-discovery-fargate-microservice-cloud-map))
+    - [Using built-in AWS CloudMap service discovery](https://containersonaws.com/pattern/service-discovery-fargate-microservice-cloud-map)
     - [Using built-in ECS Service Connect](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html)
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
