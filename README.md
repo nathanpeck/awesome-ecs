@@ -12,17 +12,15 @@ _Want to add something? Open a PR!_ 🙂
 
 ### First steps
 
-- [The Hitchhikers Guide to AWS ECS and Docker](http://start.jcolemorrison.com/the-hitchhikers-guide-to-aws-ecs-and-docker/) by [J. Cole Morrison](https://twitter.com/JColeMorrison) - Introduction to AWS ECS concepts
+- [Amazon ECS Core Concepts](https://containersonaws.com/presentations/amazon-ecs-core-concepts/) - Introduction to core concepts of Amazon ECS, including what are containers, why it is important to decouple applications from their underlying compute infrastructure, how ECS works, and what integrations that ECS has with the rest of AWS.
 - [Building Blocks of Amazon ECS](https://medium.com/containers-on-aws/building-blocks-of-amazon-ecs-db7fdfeeaa6f) - Learn about the basic building blocks of ECS and how they fit together to fully understand how it works and how you can use it!
 - [ECS Workshop](https://ecsworkshop.com/) - A detailed workshop that guides you through creating a simple microservice deployment, load testing it, and monitoring it.
 - [AWS Copilot](https://aws.github.io/copilot-cli/docs/getting-started/first-app-tutorial/) - The getting started guide for AWS Copilot helps you deploy your first simple static website container on Fargate.
 
 ### Pick your container hosting strategy:
 
-- <a href="https://aws.amazon.com/fargate/">AWS Fargate</a> - AWS Fargate allows you to launch containers directly using the ECS API, without having to manage any EC2 servers. You are billed for the amount of CPU and memory you provisioned for the container.
-- __Self managed EC2__ - For really large deployments running your own cluster of EC2 instances to host your containers gives you the most control over price and configuration. You are billed for the underlying EC2 instance as long as it runs, no matter whether it was running containers or not, so it is your responsibility to keep those EC2 instances busy if you want to be cost efficient.
-  - [Capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) - ECS capacity providers automatically launch and stop EC2 instances on your account so you always have enough capacity to run your containers.
-- [ECS Anywhere](https://aws.amazon.com/blogs/containers/introducing-amazon-ecs-anywhere/) - You can connect ECS to your own on-premise datacenter or machine and ECS can use it as capacity to run your tasks
+- [Amazon EC2 or AWS Fargate?](https://containersonaws.com/blog/2023/ec2-or-aws-fargate/) - Which compute capacity makes more sense for your workload: serverless AWS Fargate, or EC2 instances?
+   * If you pick EC2 capacity learn about [ECS capacity providers linked to EC2 auto scaling groups](https://containersonaws.com/pattern/ecs-ec2-capacity-provider-scaling) and [running containers on EC2 spot capacity](https://containersonaws.com/pattern/ecs-spot-capacity-cluster)
 
 ### Pick a tool for deploying your application
 
@@ -30,9 +28,8 @@ _Want to add something? Open a PR!_ 🙂
 - [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) - AWS CDK is an SDK that lets developers define and deploy AWS infrastructure using familiar programming languages, often the same language that the application itself is coded in. CDK creates CloudFormation automatically behind the scenes.
   - [aws-ecs](https://www.npmjs.com/package/@aws-cdk/aws-ecs) - This module provides simple low level constructs for creating ECS and Fargate services. It gets about 100k downloads per week on NPM, so it is quite popular as a choice.
   - [aws-ecs-patterns](https://www.npmjs.com/package/@aws-cdk/aws-ecs-patterns) - A more beginner friendly interface to CDK. These patterns help you setup simple things like a "load balanced service" or a "scheduled task"
-  - [ecs-service-extensions](https://www.npmjs.com/package/@aws-cdk-containers/ecs-service-extensions) - This CDK module provides the most extendable interface for ECS services. It lets you deploy an ECS service and then optionally attach extensions to it, which do things like add the service to a service mesh, or add an observability sidecar, etc.
-- [Docker Compose](https://docs.docker.com/engine/context/ecs-integration/) - If you use Docker Compose to launch your containers locally it now has an integration to deploy containers directly to ECS.
-- [CloudFormation](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - You can choose to write CloudFormation templates to describe your deployment directly, in which case these sample templates will help.
+  - [ecs-service-extensions](https://www.npmjs.com/package/@aws-cdk-containers/ecs-service-extensions) - This CDK module provides the most extendable interface for ECS services. It lets you deploy an ECS service and then optionally attach extensions to it, which do things like add the service to a service mesh, or add an observability sidecar, etc. Read more about [how to build custom extensions for ECS deployments](https://containersonaws.com/pattern/ecs-service-extensions-custom-extension)
+- [CloudFormation](https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS) - You can choose to write CloudFormation templates to describe your deployment directly, in which case these sample templates will help. Check out [prebuilt CloudFormation patterns for AWS CloudFormation and Amazon ECS + AWS Fargate](https://containersonaws.com/pattern/?tool=cloudformation)
 - [Terraform ECS](https://github.com/arminc/terraform-ecs) by [Armin Coralic](https://twitter.com/acoralic) - Production ready AWS ECS infrastructure as code with Terraform
 - [Troposphere + ECS](https://github.com/cloudtools/troposphere/blob/master/examples/ECSFargate.py) - For Python users [Troposphere](https://github.com/cloudtools/troposphere) can help create CloudFormation templates. This example shows how to create an ECS deployment using Troposphere
   
@@ -89,26 +86,25 @@ _Want to add something? Open a PR!_ 🙂
 ### Solutions
 
 - <a name="service-discovery" /> __Service Discovery__
-    - [Using built-in Route53 service discovery](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html)
-    - [Using DNS](https://github.com/awslabs/ecs-refarch-service-discovery/)
+    - [Using built-in AWS CloudMap service discovery]([https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html](https://containersonaws.com/pattern/service-discovery-fargate-microservice-cloud-map))
     - [Using Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
     - [Using Weaveworks](https://www.weave.works/blog/using-weave-to-network-containerized-microservices-on-amazon-ecs/)
     - [Using linkerd](https://medium.com/attest-engineering/linkerd-a-service-mesh-for-aws-ecs-937f201f847a)
     - [Using HAProxy](https://medium.com/ground-signal-engineering/ecs-service-discovery-with-lambda-dns-and-haproxy-1126ab381688)
 - __Service Mesh__
     - [AWS App Mesh](https://docs.aws.amazon.com/app-mesh/latest/userguide/getting-started-ecs.html)
-    - [Consul Connect](https://containersonaws.com/architecture/consul-connect-service-mesh/)
-    - [Linkerd 1.x](https://containersonaws.com/architecture/linkerd-1x-consul-service-mesh/)
 - __Data Persistance__
-    - [Using Amazon Elastic File System](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-efs-volumes.html)
+    - [Using Amazon Elastic File System example in AWS Cloud Development Kit](https://containersonaws.com/pattern/elastic-file-system-ecs-cdk)
+    - [Using Amazon Elastic File System example in CloudFormation](https://containersonaws.com/pattern/cloudformation-ecs-durable-task-storage-with-efs)
+    - [Using Amazon Elastic File System example in AWS Copilot](https://containersonaws.com/pattern/elastic-file-system-aws-copilots)
 - __Secrets Management__
     - [Using Parameter Store and IAM Roles for Tasks](https://aws.amazon.com/blogs/compute/managing-secrets-for-amazon-ecs-applications-using-parameter-store-and-iam-roles-for-tasks/)
     - [Using ECS Task roles for managing AWS credentials](https://medium.com/@RemindEng/keeping-aws-secrets-secret-with-ecs-ec4a51517b4d)
     - [The right way to store secrets using Parameter Store](https://aws.amazon.com/blogs/mt/the-right-way-to-store-secrets-using-parameter-store/)
     - [Open source tool for automatically getting secrets from SSM into your docker environment](https://github.com/SignalMedia/signal-secret-service)
+    - [Scaling from 10 to 16k+ tasks in a single ECS cluster](https://containersonaws.com/pattern/scaling-from-10-to-15000-tasks)
 - __Administration__
-    - [Automatically draining cluster instances before termination](https://aws.amazon.com/blogs/compute/how-to-automate-container-instance-draining-in-amazon-ecs/)
-    - [Monitor cluster state with Cloudwatch event stream](https://aws.amazon.com/blogs/compute/monitor-cluster-state-with-amazon-ecs-event-stream/)
+    - [Monitor cluster state with Cloudwatch event stream](https://containersonaws.com/pattern/ecs-task-events-capture-cloudwatch)
     - [React to ECS events such as crashed containers using a serverless function](https://medium.com/@laardee/subscribe-to-aws-ecs-event-stream-using-serverless-framework-74de3db66ddb)
     - [Run an ECS Task on every cluster instance](https://aws.amazon.com/blogs/compute/running-an-amazon-ecs-task-on-every-instance/)
     - [Accessing Rails console inside of an ECS task](https://github.com/mnc/rails-console-ecs)
@@ -132,12 +128,12 @@ _Want to add something? Open a PR!_ 🙂
     - [Sample task definitions](https://github.com/aws-samples/aws-containers-task-definitions) - Sample task definitions for running applications like Nginx, Tomcat, Gunicorn, Wildfly, Kibana, and Jetty as containers under Amazon ECS
 
 ### Reference Architectures
-  - [ECS Microservices Orchestration](https://github.com/msfidelis/ecs-microservices-orchestration) - Automated deployment for complete ECS Fargate Cluster using Terraform. This template provide features like Service Discovery with Cloudmap, Autoscaling, Container Insights, Workers, Scheduled tasks, Public and Private Services, Blue/Green deployment, ALB routing and CI/CD using CodePipeline and CodeBuild.
+  - [Bun JavaScript container that uses AWS SDK to connect to DynamoDB](https://containersonaws.com/pattern/bun-js-aws-sdk-container) - A tiny hit counter application. It demonstratres launching a Bun JavaScript container, with an IAM role that grants it access to use a DynamoDB table as it's state store.
   - [Sock shop microservices demo on Amazon ECS](https://github.com/microservices-demo/microservices-demo)
   - [Node.js Microservices](https://github.com/awslabs/amazon-ecs-nodejs-microservices)
   - [Java Microservices on AWS ECS](https://github.com/awslabs/amazon-ecs-java-microservices)
   - [Swift ECS Workshop](https://github.com/awslabs/swift-ecs-workshop)
-  - [NGINX Reverse Proxy sidecar container on AWS ECS](https://github.com/awslabs/ecs-nginx-reverse-proxy)
+  - [NGINX Reverse Proxy sidecar container on AWS ECS](https://containersonaws.com/pattern/nginx-reverse-proxy-sidecar-ecs-fargate-task)
   - [Deploying a Deep Learning Framework on ECS](https://github.com/awslabs/ecs-deep-learning-workshop)
   - [Powering your Amazon ECS Cluster with Amazon EC2 Spot Instances](https://github.com/awslabs/ec2-spot-labs/tree/master/ecs-ec2-spot-fleet)
   - [Reactive Microservices Architectures with Amazon ECS, AWS Lambda, Amazon Kinesis Streams, Amazon ElastiCache, and Amazon DynamoDB](https://github.com/aws-samples/reactive-refarch-cloudformation)
@@ -156,6 +152,7 @@ _Want to add something? Open a PR!_ 🙂
 - [Docker for .NET Developers](https://www.stevejgordon.co.uk/docker-dotnet-developers-part-1)
 
 ### Presentations
+  - [Amazon ECS Scalability Best Practices](https://containersonaws.com/presentations/amazon-ecs-scaling-best-practices/)
   - [Running your Dockerized application(s) on AWS EC2 Container Service](https://speakerdeck.com/mpas/running-your-dockerized-application-s-on-aws-ec2-container-service) by [Marco Pas](https://twitter.com/marcopas)
   - [Microservices on AWS with Weaveworks](https://www.youtube.com/watch?v=nSvpjZkmYIM)
   - [Running a Virtual World via ECS](https://www.youtube.com/watch?v=wGg_4aFOHsY) - Linden Labs on their usage of ECS
@@ -164,15 +161,3 @@ _Want to add something? Open a PR!_ 🙂
   - [Building Next-Generation Applications with Amazon ECS](https://www.youtube.com/watch?v=xIc3WT6kAVw) - How Meteor Built Galaxy on Amazon ECS
   - [Amazon ECS at Coursera: A General Purpose Microservice](https://www.slideshare.net/AmazonWebServices/cmp406-amazon-ecs-at-coursera-a-generalpurpose-microservice)
 
-### Customer stories
-   - [Airtime](https://airtime.com) - [Microservice Continuous Integration Made Easy with AWS ECS](https://blog.airtime.com/microservice-continuous-integration-made-easy-with-aws-ecs-dd03ae7e0fc0)
-   - [Segment](https://segment.com) - [Rebuilding Our Infrastructure with Docker, ECS, and Terraform](https://segment.com/blog/rebuilding-our-infrastructure/)
-   - [Nextdoor](https://nextdoor.com) - [How Nextdoor made a 10x improvement in release times with Docker and Amazon ECS](https://engblog.nextdoor.com/how-nextdoor-made-a-10x-improvement-in-release-times-with-docker-and-amazon-ecs-35aab52b726f)
-   - [MapBox](https://mapbox.com) - [We switched to Amazon ECS and you won't believe what happened next](https://blog.mapbox.com/we-switched-to-amazon-ecs-and-you-wont-believe-what-happened-next-6cadbbf7282c)
-   - [Jimdo - Container Based Crons](https://dev.jimdo.com/container-based-crons-at-jimdo)
-   - [Wrapp - On how EC2 Container service simplified our infrastructure stack](https://medium.com/wrapp-tech/on-microservices-and-ecs-wrapp-90665d6c0339)
-   - [Docker on AWS: from containerization to orchestration](http://mherman.org/blog/2017/11/16/docker-on-aws-from-containerization-to-orchestration)
-   - [Deploying Distributed Stateful Applications on ECS - Akka Cluster as an example](https://medium.com/@ukayani/deploying-clustered-akka-applications-on-amazon-ecs-fbcca762a44c)
-   - [Migration of our video encoder to AWS](https://medium.com/@fabricebaumann/migration-of-our-video-encoder-to-aws-e5c3ad61e8d3) - How and why Pornhub moved massive amounts of video encoding from Mesos to an autoscaling ECS cluster on AWS
-   - [Realtor](https://www.realtor.com/) - [A Better ECS](https://techblog.realtor.com/a-better-ecs/)
-   
