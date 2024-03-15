@@ -2,13 +2,13 @@
 
 A curated list of guides, development tools, and resources for:
 
-[<img src="ecs.svg" width="32px" style="vertical-align:middle"> Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS)
+[<img src="ecs.svg" width="32px" align="middle" style="vertical-align: middle"> Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS)
 
-[<img src="fargate.svg" width="32x" style="vertical-align:middle"> AWS Fargate](https://aws.amazon.com/fargate/)
+[<img src="fargate.svg" width="32x" align="middle" style="vertical-align: middle"> AWS Fargate](https://aws.amazon.com/fargate/)
 
 This list includes both community created content as well as content created by AWS.
 
-Are you looking for infrastructure as code templates and tutorials for ECS? [Containers on AWS](https://containersonaws.com/pattern) is the home for infrastructure patterns and sample code to get your started fast.
+Are you looking for infrastructure as code templates and tutorials for ECS? [Containers on AWS](https://containersonaws.com/pattern) is the home for infrastructure patterns and sample code to get you started fast.
 
 [<img src="https://containersonaws.com/images/social-card.png" width="50%" style="vertical-align:middle">](https://containersonaws.com/pattern)
 
